@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        /* #container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+        }
+        #flex {
+          display: flex;
+          justify-content: space-around;
+        }
+        #flex > p:nth-child(2) {
+          text-decoration: line-through;
+        } */
+        #container{
+            display: flex;
+             
+        }
+        img{
+            max-width: 20%;
+
+        }
+        #order{
+            width: 48%;
+             /* grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1,400px);
+            gap: 20px; */
+            border: 1px solid blue; 
+        }
+        #price{
+            width: 48%;
+            border: 1px solid red;
+        }
+       
+        #top-head{
+            display: flex;
+            
+        }
+        #invalid-coupon{
+            color:red;
+        }
+      </style>
+</head>
+<body>
+    <div id="box">
+        <div id="top-head">
+            <div id="icon">
+                <a href="">
+                    <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt="">
+                </a>
+            </div>
+            <div> / </div>
+            <div><a href="C:\Users\sumit\Documents\GitHub\Sugar_Cosmetics_Project\cart.html">Cart</a></div>
+        </div>
+        
+        <div id="container">
+            <div id="order">
+                <h2>Order Summary</h2>
+                <h2 id="total">Cart Total :</h2>
+            </div>
+            <div id="price">
+                <h3>Offers and Price Details</h3>
+                <div>
+                    <p>Gift Card/Discount Code : Apply 'masai30' to get 30 % off </p>
+                    <form>
+                        <input type="text" id="coupon" placeholder="Enter Promo Code" />
+                        <input type="submit" id="coupn-apply">
+                    </form>
+                    <h3 id="invalid-coupon"></h3>
+                    <p>Price Details</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td >Cart Sub Total:</td>
+                                <td id="card-total"></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping Cost:</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Discount Applied:</td>
+                                <td id="disc-applied"></td>
+                            </tr>
+                            <tr>
+                                <td >Amount Payable:</td>
+                                <td id="pay-amount"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="checkOut">Proceed To Payment</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
+
+<script>
+    //Local Stogare Key: makeupData
+    var cartArr = JSON.parse(localStorage.getItem("makeupData"))||[];
+    console.log("Cart: ",cartArr);
+     displayCart(cartArr);
+
+//     window.addEventListener("load", function () {
+//         displayCart(cartArr);
+//   });
+
+    function displayCart(cartArr){
+        cartArr.map(function (data,index){
+        var div = document.createElement("div");
+        
+        //Image Creation
+        var image = document.createElement("img");
+        image.setAttribute ("src",data.image_url)
+
+        //Name Creation
+        var name = document.createElement("p");
+        name.textContent = data.name;
+
+        //Price Creation
+
+        var price = document.createElement("p");
+        price.textContent = data.price;
+        
+        //Remove Creation
+        var remove = document.createElement("p");
+        remove.textContent = "Remove"
+        remove.addEventListener("click",function(){
+            removeItem(index);
+        });
+
+        //Append
+        div.append(image,name,price,remove);
+        document.querySelector("#order").append(div);
+    });
+}
+
+     //Total calculate
+     var total = cartArr.reduce(function(acc,cv){
+        return (acc + cv.price);
+    },0);
+
+    console.log("Total: ",total);
+
+    document.querySelector("#total").textContent=`Cart Total : ${total} `
+    
+    //Coupon Apply
+    document.querySelector("#card-total").textContent=total;
+    localStorage.setItem("discountPrice",0);
+
+    var discPrice = JSON.parse(localStorage.getItem("discountPrice"));
+
+    if(discPrice==0){
+        document.querySelector("#disc-applied").textContent=0;
+        document.querySelector("#pay-amount").textContent=total;
+    }
+
+    document.querySelector("form").addEventListener("submit", discount);
+     //Apply Discount
+     function discount(event){
+        event.preventDefault(); 
+        var coupon = document.querySelector("#coupon").value;
+        if(coupon=='masai30'){
+            var discountPrice = total * 0.7;
+
+            localStorage.setItem("discountPrice",discountPrice);
+            document.querySelector("#disc-applied").textContent=total*0.3;
+            document.querySelector("#pay-amount").textContent=discountPrice;
+
+            console.log("discount:",discountPrice);
+        }
+        else{
+            document.querySelector("#invalid-coupon").textContent="Invalid Coupon";
+        }
+        
+       
+    }
+
+   
+
+    //Redirect to payment page
+    document.getElementById("checkOut").addEventListener("click",checkOut);
+    function checkOut(event){
+        window.location.href = "payment.html"
+    }
+   
+
+
+ //Remove From Cart
+ function removeItem(index){
+    event.preventDefault();
+         console.log(index);
+         cartArr.splice(index,1);
+        // console.log(cartArr);
+         localStorage.setItem("makeupData",JSON.stringify(cartArr));
+        //  var cartArrRemove = JSON.parse(localStorage.getItem("makeupData"));
+         
+         displayCart(cartArr);
+         cartArr.map(function (data,index){
+             document.querySelector("")
+         })
+     }
+    
+
+</script>
