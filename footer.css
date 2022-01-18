@@ -1,12 +1,12 @@
 #ft_container {
-  padding:0 70px;
-   background-color: black;
-   display: block;
-   overflow: hidden;
+  padding: 0 70px;
+  background-color: black;
+  display: block;
+  overflow: hidden;
 }
-  #footer {
+#footer {
   color: rgb(133, 128, 128);
-  margin:0px;
+  margin: 0px;
   padding-top: 0;
   width: 100%;
 }
@@ -109,7 +109,6 @@ hr {
     margin: 0;
   }
   #footer > div {
-  padding:30px ;
-  
-}
+    padding: 30px;
+  }
 }
