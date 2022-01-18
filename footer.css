@@ -102,7 +102,6 @@ hr {
     justify-content: space-between;
     flex-direction: column;
     margin: 10px 0;
-    /* margin-right: 100px; */
   }
   #ft_copyright {
     text-align: left;
