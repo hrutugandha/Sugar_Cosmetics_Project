@@ -1,6 +1,13 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+*{
+  background-color:black;
+}
 #ft_container {
   padding: 0 70px;
-  background-color: black;
+  background-color: black ;
   display: block;
   overflow: hidden;
 }
