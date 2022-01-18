@@ -1,9 +1,14 @@
-#footer {
-  background-color: black;
+#ft_container {
+  padding:0 70px;
+   background-color: black;
+   display: block;
+   overflow: hidden;
+}
+  #footer {
   color: rgb(133, 128, 128);
-  display: flex;
-  margin-top:0;
+  margin:0px;
   padding-top: 0;
+  width: 100%;
 }
 .ft_white {
   color: white;
@@ -15,14 +20,6 @@ button {
 .ft_row {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-  /* margin-right: 100px; */
-}
-#footer > div {
-  padding:0px 90px 0 100px;
-  margin: 0px 0px;
-  display: flex;
-  flex-direction: column;
 }
 a {
   text-decoration: none;
