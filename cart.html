@@ -45,9 +45,25 @@
         #invalid-coupon{
             color:red;
         }
+        #divBox{
+            display: flex;
+        }
+        #divBox> div{
+            width: 20px;
+            height:20px;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+        #divBox> #divPriceBox{
+            width: 80px;
+            height:20px;
+            border: 1px solid blue;
+            background-color: orangered;
+        }
       </style>
 </head>
 <body>
+    
     <div id="box">
         <div id="top-head">
             <div id="icon">
@@ -60,9 +76,15 @@
         </div>
         
         <div id="container">
-            <div id="order">
+            <!-- <div id="order"> -->
+            <div>
+                <input type="checkbox" style="border:2px dotted #00f;display:block;background:#ff0000;" />
+
                 <h2>Order Summary</h2>
                 <h2 id="total">Cart Total :</h2>
+                <div id="order-disp">
+                    <div id="order"></div>
+                </div>
             </div>
             <div id="price">
                 <h3>Offers and Price Details</h3>
@@ -78,7 +100,7 @@
                         <tbody>
                             <tr>
                                 <td >Cart Sub Total:</td>
-                                <td id="card-total"></td>
+                                <td id="cart-total"></td>
                             </tr>
                             <tr>
                                 <td>Shipping Cost:</td>
@@ -114,6 +136,7 @@
 //   });
 
     function displayCart(cartArr){
+        document.querySelector("#order").innerHTML="";
         cartArr.map(function (data,index){
         var div = document.createElement("div");
         
@@ -130,34 +153,95 @@
         var price = document.createElement("p");
         price.textContent = data.price;
         
+
+        //Increment/Decrement Added Product Creation
+        var divBox = document.createElement("div");
+        divBox.id = "divBox"
+        var divRmv = document.createElement("div");
+        divRmv.id="divRmv";
+        divRmv.textContent="R"
+        var divDec = document.createElement("div");
+        divDec.id="divDec";
+        divDec.textContent="-"
+        var divQty = document.createElement("div");
+        divQty.id="divQty";
+        divQty.textContent= data.count;
+        var divInc = document.createElement("div");
+        divInc.id="divInc";
+        divInc.textContent="+"
+
+        var divPriceBox = document.createElement("div");
+        divPriceBox.id="divPriceBox";
+    
+        //Append to divBox
+        divBox.append(divRmv,divDec,divQty,divInc,divPriceBox);
+        
+        var divQtyP = document.createElement("div");
+        divQtyP.id ="divQtyP";
+        divQtyP.textContent=data.count;
+
+        var divMul = document.createElement("div");
+        divMul.id ="divMul";
+        divMul.textContent="x";
+
+        var divPrice = document.createElement("div");
+        divPrice.id ="divPrice";
+        divPrice.textContent=data.price;
+
+        var divEqual = document.createElement("div");
+        divEqual.id ="=";
+        divEqual.textContent="=";
+
+        var divPTotal = document.createElement("div");
+        divPTotal.id ="divPTotal";
+        divPTotal.textContent = data.price * data.count;
+
+        //Append to divPriceBox
+        divPriceBox.append(divQtyP,divMul,divPrice,divEqual,divPTotal)
+       
+
+        //Append to div
+        div.append(image,name,price,divBox);
+        document.querySelector("#order").append(div);
+
+        
         //Remove Creation
-        var remove = document.createElement("p");
-        remove.textContent = "Remove"
-        remove.addEventListener("click",function(){
+        // var remove = document.createElement("p");
+        // remove.textContent = "Remove"
+        divRmv.addEventListener("click",function(){
             removeItem(index);
         });
 
-        //Append
-        div.append(image,name,price,remove);
-        document.querySelector("#order").append(div);
+        //Increment function Call 
+        divInc.addEventListener("click",function(){
+            incrementProduct(index);
+        });
+
+        //Decreement function Call 
+        divDec.addEventListener("click",function(){
+            decrementProduct(index);
+        });
     });
 }
 
+    
      //Total calculate
      var total = cartArr.reduce(function(acc,cv){
-        return (acc + cv.price);
+        return (acc + cv.price*cv.count);
     },0);
+    localStorage.setItem("total",total);
 
     console.log("Total: ",total);
 
     document.querySelector("#total").textContent=`Cart Total : ${total} `
     
     //Coupon Apply
-    document.querySelector("#card-total").textContent=total;
+    document.querySelector("#cart-total").textContent=total;
     localStorage.setItem("discountPrice",0);
 
     var discPrice = JSON.parse(localStorage.getItem("discountPrice"));
 
+    //Check didcount =0
     if(discPrice==0){
         document.querySelector("#disc-applied").textContent=0;
         document.querySelector("#pay-amount").textContent=total;
@@ -189,7 +273,13 @@
     //Redirect to payment page
     document.getElementById("checkOut").addEventListener("click",checkOut);
     function checkOut(event){
-        window.location.href = "payment.html"
+        if(event==true){
+            window.location.href = "payment.html"
+        }
+        else{
+            alert("Cart Empty");
+        }
+        
     }
    
 
@@ -198,15 +288,95 @@
  function removeItem(index){
     event.preventDefault();
          console.log(index);
+
+         total = JSON.parse(localStorage.getItem("total"));
+         var newTotal=total-cartArr[index].price;
+         localStorage.setItem("total",newTotal);
+
          cartArr.splice(index,1);
         // console.log(cartArr);
          localStorage.setItem("makeupData",JSON.stringify(cartArr));
         //  var cartArrRemove = JSON.parse(localStorage.getItem("makeupData"));
-         
+         console.log(cartArr)
          displayCart(cartArr);
-         cartArr.map(function (data,index){
-             document.querySelector("")
-         })
+         
+         console.log(newTotal);
+         
+         document.querySelector("#total").textContent=`Cart Total : ${newTotal} `
+         document.querySelector("#cart-total").textContent=newTotal;
+         document.querySelector("#pay-amount").textContent=newTotal;
+         //console.log("Aftet Rem Total: ",newTotal);
+         
+        //  cartArr.map(function (data,index){
+        //      document.querySelector("")
+        //  })
+     }
+
+     //Increment Product
+     function incrementProduct(index){
+        event.preventDefault();
+
+        var newCount= ++cartArr[index].count;
+        console.log(newCount)
+        localStorage.setItem("makeupData",JSON.stringify(cartArr));
+
+        //Update Quantiity when incremented
+        var x = document.querySelectorAll("#divQty");
+        x[index].textContent=newCount;
+
+       //Update Quantiity to on when incremented(On divPriceBox)
+        var y = document.querySelectorAll("#divQtyP");
+        y[index].textContent=newCount;
+
+        //Uodate Total Price when increment Product
+        var z = document.querySelectorAll("#divPTotal");
+        z[index].textContent = cartArr[index].price * cartArr[index].count
+
+        //Update Card Total
+        total +=  cartArr[index].price;
+        console.log("Total after inc. ",total)
+        localStorage.setItem("total",total);
+        document.querySelector("#total").textContent=`Cart Total : ${total} `;
+        document.querySelector("#cart-total").textContent=total;
+        document.querySelector("#pay-amount").textContent=total;
+        
+
+     }
+     
+     //Decrement Product
+     function decrementProduct(index){
+        event.preventDefault();
+        count=cartArr[index].count;
+        if(count==1){
+            removeItem(index);
+        }
+        else{
+            var newCount=--cartArr[index].count;
+            localStorage.setItem("makeupData",JSON.stringify(cartArr));
+
+             //Update Quantiity when incremented
+            var x = document.querySelectorAll("#divQty");
+            x[index].textContent=newCount;
+            console.log(newCount)
+
+            //Update Quantiity to on when Decrement(On divPriceBox)
+            var y = document.querySelectorAll("#divQtyP");
+            y[index].textContent=newCount;
+
+    
+            //Uodate Total Price when Decrement Product
+            var z = document.querySelectorAll("#divPTotal");
+            z[index].textContent = cartArr[index].price * cartArr[index].count
+            //Update Card Total
+            total -=  cartArr[index].price;
+            console.log("Total after dec. ",total)
+            localStorage.setItem("total",total);
+            document.querySelector("#total").textContent=`Cart Total : ${total} `;
+            document.querySelector("#cart-total").textContent=total;
+            document.querySelector("#pay-amount").textContent=total;
+        
+        }
+        
      }
     
 
