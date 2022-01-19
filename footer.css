@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-}
+  font-family: Poppins,sans-serif;}
 #ft_container {
   padding: 0 70px;
   background-color: black;
@@ -58,6 +58,8 @@ img {
 }
 p {
   width: 200px;
+  font-family: Poppins,sans-serif;
+  color: rgb(133, 128, 128);
 }
 #ft_time {
   margin-top: 0;
