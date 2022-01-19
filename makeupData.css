@@ -5,3 +5,87 @@
     grid-template-columns: repeat(4,1fr);
     gap:50px;
 }
+#main{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#main:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#image{
+   margin: 0px 20px 0px 20px;
+    width:85%;
+    height: 241px;
+}
+p{
+    text-align: center;
+}
+#star{
+    width:20px;
+    height: 20px;
+}
+#flex{
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+#flex:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+}
+#flex>p{
+    margin-top: 0px;
+}
+#btn{
+    border: none;
+}
+#btn:hover{
+    background-color:pink;
+    cursor:pointer;
+}
+#btn1{
+    border: none;
+}
+#btn1:hover{
+    background-color:pink;
+    cursor: pointer;
+}
+#flex1{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#displayBar{
+    display: flex;
+}
+.home-img{
+    width:3%;
+    text-decoration: none;
+}
+.home-img1{
+    margin: 0px 10px;
+    text-decoration: none;
+    color:  rgb(117,131,159);
+}
+#shade{
+    width: 5%;
+    height: 3%;
+}
+#shadeNo{
+    margin-top: -3px;
+}
+#shadeFlex{
+    display: flex;
+    margin-top:5px;
+    justify-content:flex-end;
+}
+@media only screen and (min-width:401px) and (max-width:850px){
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (min-width:0px) and (max-width:400px){
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
