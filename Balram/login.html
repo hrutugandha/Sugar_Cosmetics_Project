@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+    
+ 
+<body>
+    <div class="main">
+       
+        <form>
+            <h2>Log In </h2>
+           <input type="text" name="" id="user" placeholder="Enter Your User Name"><br><br>
+          <input type="password" name="" id="pass" placeholder="Enter Your Password"><br><br>
+           <input type="submit" id="sub" value="Sign Up">
+        </form>
+            
+            <span>By Signing up or logging in, you agree to our Terms and Conditions</span>
+        </div>
+</body>
+
+<script>
+       document.querySelector("form").addEventListener("submit",signin);
+
+    var regdUsers =  JSON.parse(localStorage.getItem("DB"));
+
+    function signin(event) {
+        event.preventDefault();
+        
+      //  var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#pass").value;
+        var user = document.querySelector("#user").value;
+     
+        for(var i = 0; i < regdUsers.length ; i++) {
+            //console.log(regdUsers[i].userName);
+         
+            if(regdUsers[i].userName == user &&  regdUsers[i].passwd == pass)
+            {
+             //   console.log("hello you have to login");
+            window.location.href ="https://in.sugarcosmetics.com/?utm_source=google&utm_medium=search&utm_campaign=6481428205&adgroupid=80660348867&utm_content=385617840155&utm_term=buy%20sugar%20cosmetics%20online&gclid=CjwKCAiA55mPBhBOEiwANmzoQj9aAMVQ7nmPHK-_FGaPK85TTZZ834HKSv7qMsVmYoAwpA6wl8YUkxoC6EIQAvD_BwE";
+            }
+             else {
+                        alert("Plese Enter currect Password and User Name");
+                    }
+        }
+        
+    
+    }
+</script>
+</html>
