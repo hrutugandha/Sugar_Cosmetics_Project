@@ -9,8 +9,6 @@
 </head>
 <body>
     <div id="container">
-        <!--------------Header--------------->
-    <div id="header-container">
         <div id="header">
             <div class="logo">
                 <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="">
@@ -29,61 +27,16 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/879/879859.png" alt="" placeholder="Discount">
             </div>
         </div>
-        <div id="dropdown_container">
-          <div class="dropdown_menu">
-            <div style="margin-left: 25px;"> MAKEUP</div>
-            <div> BRUSHES</div>
-            <div>SKINCARE</div>
-            <div>TRENDING</div>
-            <div>BLOG</div>
-            <div>OFFERS</div>
-          </div>
+        <div id="menu-container">
+            <div id="dropdown-menu">
+              <div id="menu">MAKEUP</div>
+              <div class="dropdown-toggle">
+                <a href="">LIPS</a>
+                <a href="">FACE</a>
+                <a href="">EYES</a>
+              </div>
+            </div>
         </div>
-    </div>
-         <!--------------Header-end--------------->
-        <div class="slideshow-container">
-                <div class="mySlides1">
-                  <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8ecc459e-47cc-4279-8848-a74a7ae1e206.jpg" style="width:100%">
-                </div>
-                <div class="mySlides1">
-                  <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8e56b4a3-e6c6-45b6-80a5-1b3728ba8fde.jpg" style="width:100%">
-                </div>
-                <div class="mySlides1">
-                  <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/6db3030f-68ba-4855-9384-cfcd843ca573.jpg" style="width:100%">
-                </div>
-                <div class="mySlides1">
-                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/90cd6fb8-82b4-4711-9662-7f54e770866e.jpg" style="width:100%">
-                  </div>
-                  <div class="mySlides1">
-                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8ecc459e-47cc-4279-8848-a74a7ae1e206.jpg" style="width:100%">
-                  </div>
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div> 
-         <!------------------------------------------------>
-       <div id="bestseller"></div>
     </div>
 </body>
 </html>
-<script>
-    var slideIndex = [1,1];
-    var slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
-    
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
-    
-    function showSlides(n, no) {
-      var i;
-      var x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1}    
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      x[slideIndex[no]-1].style.display = "block";  
-    }
-    </script>
-    
