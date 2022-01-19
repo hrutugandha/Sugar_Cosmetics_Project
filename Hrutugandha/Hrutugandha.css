@@ -6,13 +6,8 @@
     display: flex;
     background-color: #f8f9fa;
 }
-#menu-container{
-    width: 100%;
-    height: 45px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-#menu-container > div {
-    padding: 10px 40px 10px 40px;
+#header-container{
+  width: 100%;
 }
 body{
     margin: 0;
@@ -97,17 +92,13 @@ justify-content: center;
     height: 15px;
     color: #495057;
 }
-#menu:hover{
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    display: block;
-}
 #dropdown_container {
     width: 100%;
+    margin: 0px;
+    height: 30px;
+    border: 0px;
     display: flex;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .dropdown_menu{
     display: flex;
@@ -120,9 +111,50 @@ justify-content: center;
     font-size: small;
     font-family: Arial Black,Arial Bold,Gadget,sans-serif;
 }
-.dropdown_menu > div:hover{
-    color: transparent;
-    text-shadow: 0 0 2px rgb(15, 13, 13);
+#home_nav ul {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+ul li {
+  margin: 20px 40px;
+  position: relative;
+}
+.dropdown-makeup ul {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column !important;
+  /* border: 1px solid green; */
+  padding: 0;
+}
+.dropdown-makeup ul li {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start;
+}
+.dropdown-makeup {
+  display: none;
+}
+li:hover > .dropdown-makeup {
+  background-color: white;
+  display: block;
+}
+ul{
+    padding: 0px;
+}
+.nav_link{
+  color: #707477e8;
+  font-size: small;
+  text-decoration: none;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+.nav_link:hover{
+  color: transparent;
+  text-shadow: 0 0 1px rgb(15, 13, 13);
 }
 /* Slideshow container */
 .slideshow-container {
@@ -157,10 +189,4 @@ justify-content: center;
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
-}
-#bestseller{
-    height: 460px;
-    width: 100%;
-    border: 1px solid red;
-    margin: 0px;
 }
