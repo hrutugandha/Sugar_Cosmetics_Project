@@ -1,0 +1,87 @@
+.cards {
+  display: flex;
+  /* border: 10px solid green; */
+  padding: 0 50px;
+  justify-content: space-evenly;
+  /* margin:0px; */
+}
+.down_two_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+  margin:0 100px;
+}
+.down_two_img img {
+width: 522px;
+height: 100%;
+}
+.down_rupees {
+  padding: 0;
+  margin: 0;
+  line-height: 0.35em;
+}
+/* .card_dn + div {
+background-color:red;
+  color: rgb(219, 91, 198);
+} */
+.down_rupees :nth-child(3) {
+  color: rgb(219, 91, 198);
+}
+.down_rupees :nth-child(1) {
+  text-decoration: line-through;
+}
+.cards > img {
+  width: 380px;
+  height: 316px;
+  margin: 10px;
+}
+#down_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.down_center_heading {
+  margin: 15px;
+  font-size: 34px;
+  letter-spacing: 2px;;
+}
+.card_dn button {
+  width: 100%;
+  border: none;
+  padding: 8px 5px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+.card_dn button:hover {
+  background-color: pink;
+  color: black;
+}
+.card_dn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width:200px;
+  /* height:306px; */
+}
+.card_dn div {
+  margin: 5px 0 10px 0;
+}
+.card_dn img {
+  width: 193.28px;
+  height:250px;
+}
+.hd-last > img {
+  max-width: 277px;
+  height: 100%;
+}
+.hd-last {
+  width: 80%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-bottom: 10px;
+  /* flex-direction: column; */
+}
