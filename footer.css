@@ -56,6 +56,9 @@ img {
   width: 100px;
   height: 30px;
 }
+#ft_store p {
+  margin-top: 4px;
+}
 p {
   width: 200px;
   font-family: Poppins,sans-serif;
@@ -99,7 +102,6 @@ input::placeholder {
 hr {
   margin-right: 0;
 }
-
 @media only screen and (min-width: 0) and (max-width: 720px) {
   .ft_row {
     justify-content: space-between;
