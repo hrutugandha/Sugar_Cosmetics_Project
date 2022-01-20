@@ -20,6 +20,9 @@ body {
   height: 175px;
   margin: 0 50px;
 }
+.weekly_pics img:hover {
+  box-shadow: rgba(0, 0, 1, 0.24) 5px 3px 8px;
+}
 .cards {
   width: 100%;
   display: flex;
@@ -35,6 +38,9 @@ body {
 .down_two_img img {
   width: 522px;
   height: 100%;
+}
+.down_two_img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .down_rupees {
   padding: 0;
@@ -52,6 +58,9 @@ body {
   width: 380px;
   height: 316px;
   margin: 10px;
+}
+.cards > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .down_center_heading {
   margin: 15px;
@@ -78,7 +87,6 @@ body {
   padding: 0px;
   margin: 20px;
   width: 200px;
-  /* border: 2px solid red; */
 }
 .card_dn:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -91,16 +99,20 @@ body {
   height: 250px;
   margin-bottom: 10px;
 }
+.card_dn img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .hd-last > img {
-  max-width: 277px;
   height: 100%;
+  width: 100%;
+}
+.hd-last >img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .hd-last {
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
   margin-bottom: 10px;
-  /* flex-direction: column; */
 }
 
 @media only screen and (min-width: 0) and (max-width: 320px) {
@@ -109,28 +121,65 @@ body {
     margin: 10px 0;
     width: 100%;
   }
+
   .weekly_pics img {
     margin: 10px 0;
     width: 100%;
   }
   .cards {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     padding: 0;
   }
   .down_two_img {
     flex-direction: column;
     width: 100%;
     padding: 0;
-    margin: 0 0;
+    margin: 0;
   }
   .down_two_img img {
     width: 100%;
     margin: 10px 0;
   }
+  .card_dn {
+    /* width: 100%; */
+    margin: 10px auto;
+  }
   .cards > img {
     width: 100%;
     /* height: 316px; */
     margin: 10px 0;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .weekly_pics {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 50%;
+  }
+
+  .weekly_pics img {
+    margin: 10px auto;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 0;
+  }
+  .down_two_img {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .down_two_img img {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .card_dn {
+    margin: 10px auto;
+  }
+  .cards > img {
+    width: 50%;
+    height: 316px;
+    margin: 10px auto;
   }
 }
