@@ -16,7 +16,6 @@ function filter(){
 
 function handlerPriceSort(){
     var selected = document.querySelector("#priceSort").value;
-    // console.log(selected);
     if(selected=="high"){
         brushData.sort(function (a,b){
             return b.price-a.price;
@@ -37,7 +36,6 @@ function handlerPriceSort(){
 document.querySelector("#displayitem").textContent=`Brush - ${brushData.length} items`
 
 function displayData(brushData ){
-    // event.preventDefault();
 document.querySelector("#container-prod").innerHTML = ""
 brushData.map(function (elem){
 
@@ -78,7 +76,7 @@ brushData.map(function (elem){
 
     var btn = document.createElement("button");
     btn.setAttribute("id","btn")
-    btn.textContent = "WISHLIST"
+    btn.innerHTML = "&#129293";
     btn.addEventListener("click",function(){
         wishList(elem)
     })
@@ -105,8 +103,6 @@ function addToCart(elem){
 }
 
 function wishList(elem){
-    // console.log("Done")
-    // console.log(elem)
     wishlistArr.push(elem)
     localStorage.setItem("listItems", JSON.stringify(wishlistArr));
     alert("Item added to wish list")
