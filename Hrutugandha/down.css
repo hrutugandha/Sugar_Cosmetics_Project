@@ -93,7 +93,7 @@
     height: 100%;
   }
   .hd-last {
-    width: 80%;
+    width: 100%;
     display: flex;
     /* flex-wrap: wrap; */
     margin-bottom: 10px;
