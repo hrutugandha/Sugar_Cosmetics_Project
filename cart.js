@@ -1,9 +1,11 @@
 
-    
+    //local storage name of ad to cart: cartItems
+ var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+
     //Start
     
-    //Local Stogare Key: makeupData
-    var cartArr = JSON.parse(localStorage.getItem("makeupData"))||[];
+    //Local Stogare Key: cartItems
+    var cartArr = JSON.parse(localStorage.getItem("cartItems"))||[];
     console.log("Cart: ",cartArr);
      displayCart(cartArr);
 
@@ -14,18 +16,20 @@
     function displayCart(cartArr){
         document.querySelector(".cart-product").innerHTML="";
         cartArr.map(function (data,index){
-        var div = document.createElement("div");
-        
+        var divCartlft = document.createElement("div");
+        divCartlft.id="divCartlft"
         //Image Creation
         var image = document.createElement("img");
         image.setAttribute ("src",data.image_url)
 
         //Name Creation
         var name = document.createElement("p");
+        name.id="name";
         name.textContent = data.name;
 
         //Image & Name in one div;
         var divImgName = document.createElement("div");
+        divImgName.id="divImgName"
         divImgName.append(image,name)
 
         //Price Creation
@@ -80,9 +84,9 @@
         divPriceBox.append(divQtyP,divMul,divPrice,divEqual,divPTotal)
        
 
-        //Append to div
-        div.append(divImgName,divBox);
-        document.querySelector(".cart-product").append(div);
+        //Append to divCartlft
+        divCartlft.append(divImgName,divBox);
+        document.querySelector(".cart-product").append(divCartlft);
 
         
         //Remove Creation
@@ -184,8 +188,8 @@
 
          cartArr.splice(index,1);
         // console.log(cartArr);
-         localStorage.setItem("makeupData",JSON.stringify(cartArr));
-        //  var cartArrRemove = JSON.parse(localStorage.getItem("makeupData"));
+         localStorage.setItem("cartItems",JSON.stringify(cartArr));
+        //  var cartArrRemove = JSON.parse(localStorage.getItem("cartItems"));
          console.log(cartArr)
          displayCart(cartArr);
          
@@ -207,7 +211,7 @@
 
         var newCount= ++cartArr[index].count;
         console.log(newCount)
-        localStorage.setItem("makeupData",JSON.stringify(cartArr));
+        localStorage.setItem("cartItems",JSON.stringify(cartArr));
 
         //Update Quantiity when incremented
         var x = document.querySelectorAll("#divQty");
@@ -241,7 +245,7 @@
         }
         else{
             var newCount=--cartArr[index].count;
-            localStorage.setItem("makeupData",JSON.stringify(cartArr));
+            localStorage.setItem("cartItems",JSON.stringify(cartArr));
 
              //Update Quantiity when incremented
             var x = document.querySelectorAll("#divQty");
