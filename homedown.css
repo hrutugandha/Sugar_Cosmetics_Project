@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 #down_cont {
   display: flex;
   flex-direction: column;
@@ -6,18 +10,20 @@
 }
 .weekly_pics {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
 }
 .weekly_pics img {
-  width: 300px;
+  width: 100%;
   height: 175px;
   margin: 0 50px;
 }
 .cards {
+  width: 100%;
   display: flex;
-  padding: 0 50px;
+  padding: 0 s0px;
   justify-content: space-evenly;
 }
 .down_two_img {
@@ -90,7 +96,7 @@
   height: 100%;
 }
 .hd-last {
-  width: 80%;
+  width: 100%;
   display: flex;
   /* flex-wrap: wrap; */
   margin-bottom: 10px;
