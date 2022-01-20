@@ -104,6 +104,10 @@ hr {
   margin-right: 0;
 }
 @media only screen and (min-width: 0) and (max-width: 720px) {
+  #ft_container {
+    padding: 0;
+    width:80%;
+  }
   .ft_row {
     justify-content: space-between;
     flex-direction: column;
