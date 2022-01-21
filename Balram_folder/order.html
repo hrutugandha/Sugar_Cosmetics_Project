@@ -4,62 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
-    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <title>orders</title>
 </head>
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="nav2.css">
 <style>
-    .main{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 110px;
-        margin: 5% 10% 10% 5%;
-         grid-template-areas: 
-         "a a a b b b c c c d d d";
-       
-    }
-    #A{
-        background-color:#a263f3;   
-        grid-area: a;
-        border-radius: 5px;
-        padding: 4px 20px 10px 50px ;
-    }
-   #A:hover{
-       background-color: #b183ec;
-   }
  
-    #B{
-        background-color: #15e033;   
-        grid-area: b;
-        border-radius: 5px;
-        padding: 4px 20px 10px 32px ;
-    }
-    #B:hover{
-       background-color:#6bfa80;
-   }
- 
-    .main :nth-child(3){
-        background-color: #f00a11;
-        grid-area: c;
-        border-radius: 10px;
-        padding: 4px 20px 10px 32px ;
-    }
-    .main :nth-child(3):hover{
-       background-color:#dd6c55;
-   }
-    .main :nth-child(4){
-        background-color:#40a3e0;
-        grid-area: d;
-        border-radius: 5px;
-     padding: 4px 20px 10px 32px ; */
-    }
-    .main :nth-child(4):hover{
-       background-color:#7ac2ee;
-   }
-   a{
-       text-decoration: none;
-       color: rgb(243, 217, 217);
-   }
+ img{
+     height: 30%;
+     width: 40%;
+    margin-left: 400px;
+    margin-top: -100px;
+ }
+ #text1{
+     margin-left: 130px;
+     color: rgb(94, 86, 86);
+ }
+ #text2{
+     margin-left: 130px;
+     font-weight: 800px;
+     color: rgb(94, 86, 86);
+ }
+ #sub{
+     background-color: #fc2779;
+     color: white;
+     margin-top: 20px;
+     padding: 10px 25px 10px 25px;
+     border: 0px;
+     border-radius: 2px;
+ }
+ #sub:hover{
+     background-color: violet;
+ }
  
 
 
@@ -87,6 +63,12 @@
             <p>Referral earnings</p>
         </a>
        </div>
+    </div>
+    <div>
+        <h1 id="text1">No Order</h1>
+        <p id="text2">You don't have any orders in your history yet  <br><input type="submit" id="sub" value="Shop Now"></p>
+        
+        <img src="https://in.sugarcosmetics.com/ic_empty_order.png" alt="">
     </div>
     <div id="ft_container">
         <div id="footer">

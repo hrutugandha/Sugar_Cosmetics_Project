@@ -28,7 +28,7 @@
 </body>
 <script>
     document.querySelector("form").addEventListener("submit",formSubmit);
-    var userStack = [];
+    var userStack = JSON.parse(localStorage.getItem("DB")) || [];
     function formSubmit(Event) {
         event.preventDefault();
         

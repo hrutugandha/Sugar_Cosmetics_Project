@@ -25,31 +25,47 @@
 </body>
 
 <script>
-       document.querySelector("form").addEventListener("submit",signin);
+       document.querySelector("form").addEventListener("submit",login);
 
-    var regdUsers =  JSON.parse(localStorage.getItem("DB"));
+    var regdUsers =  JSON.parse(localStorage.getItem("DB")) ;
+   
 
-    function signin(event) {
+    function login(event) {
         event.preventDefault();
-        
+     //  console.log(regdUsers);
+    
+
       //  var email = document.querySelector("#email").value;
         var pass = document.querySelector("#pass").value;
         var user = document.querySelector("#user").value;
-     
+
+           var flag=false;
         for(var i = 0; i < regdUsers.length ; i++) {
             //console.log(regdUsers[i].userName);
-         
-            if(regdUsers[i].userName == user &&  regdUsers[i].passwd == pass)
+             
+            if(regdUsers[i].userName == user &&  regdUsers[i].passwd == pass )
             {
-             //   console.log("hello you have to login");
-            window.location.href ="https://in.sugarcosmetics.com/?utm_source=google&utm_medium=search&utm_campaign=6481428205&adgroupid=80660348867&utm_content=385617840155&utm_term=buy%20sugar%20cosmetics%20online&gclid=CjwKCAiA55mPBhBOEiwANmzoQj9aAMVQ7nmPHK-_FGaPK85TTZZ834HKSv7qMsVmYoAwpA6wl8YUkxoC6EIQAvD_BwE";
+                flag=true;
+           
+        
+            
+                  
+          
             }
-             else {
+          
+        }
+        if(flag == true)
+           {
+              
+                  console.log("hello you have to login");
+                  
+                  window.location.href ="wishlist.html";
+                  alert("You are success fully Loged in");
+       
+                }
+          else {
                         alert("Plese Enter currect Password and User Name");
                     }
-        }
-        
-    
     }
 </script>
 </html>

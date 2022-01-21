@@ -9,66 +9,16 @@
 </head>
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="nav2.css">
 <style>
-    .main{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 110px;
-        margin: 5% 10% 0% 5%;
-         grid-template-areas: 
-         "a a a b b b c c c d d d";
-       
-    }
-    #A{
-        background-color:#a263f3;   
-        grid-area: a;
-        border-radius: 5px;
-        padding: 4px 20px 10px 50px ;
-    }
-   #A:hover{
-       background-color: #b183ec;
-   }
- 
-    #B{
-        background-color: #15e033;   
-        grid-area: b;
-        border-radius: 5px;
-        padding: 4px 20px 10px 32px ;
-    }
-    #B:hover{
-       background-color:#6bfa80;
-   }
- 
-    .main :nth-child(3){
-        background-color: #f00a11;
-        grid-area: c;
-        border-radius: 10px;
-        padding: 4px 20px 10px 32px ;
-    }
-    .main :nth-child(3):hover{
-       background-color:#dd6c55;
-   }
-    .main :nth-child(4){
-        background-color:#40a3e0;
-        grid-area: d;
-        border-radius: 5px;
-     padding: 4px 20px 10px 32px ; */
-    }
-    .main :nth-child(4):hover{
-       background-color:#7ac2ee;
-   }
-   a{
-       text-decoration: none;
-       color: rgb(243, 217, 217);
-   }
-
+   
    #sub{
      background-color: #fc2779;
      color: white;
      margin: 30px 0px 80px 50px;
      padding: 20px 45px 20px 45px;
      border: 0px;
-     border-radius: 2px;
+     border-radius: 4px;
  }
  #sub:hover{
      background-color: violet;
@@ -87,6 +37,26 @@
        margin-top: -10px;
       color: black;
    }
+   #imgtext{
+     display: flex;
+     margin: -40px 0px 30px 40px;
+     font-size: 20px;
+     font-weight: 700;
+  }
+  #earnig_text{
+     margin: 50px;
+    font-size: 18px;
+  }
+  #span_t1{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #span_t2{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(236, 34, 186);
+  }
  
 
 </style>
@@ -131,6 +101,18 @@
     <a href="">
     <input type="submit" id="sub"  value=" Referal a friend"/>
    </a>
+   <div id="imgtext">
+     <img src="https://in.sugarcosmetics.com/desc-images/MoneyBag_Referral.png" alt="">
+     <p>Refer and Earn!</p>
+    </div>
+    <p id="earnig_text">
+      <span id="span_t1"> Step to earn your rewards</span> <br><br>
+      1.Check above if your refferals unlocked. <br><br>
+      2.Enter your UPI ID. <br><br>
+      3.Shar your referal code with your friend. <br><br>
+      Once your friend recives their order, You receive up to <span id=span_t2>INR 250</span> in your acount! 
+    </p>
+   <!-- //footer start from here -->
    <div id="ft_container">
     <div id="footer">
       <div id="icons" class="ft_white">
