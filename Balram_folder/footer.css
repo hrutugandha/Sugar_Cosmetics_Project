@@ -166,4 +166,8 @@ body {
       width:100%;
     }
   }
-  
+  img[alt="suger cosmetics logo"] {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
