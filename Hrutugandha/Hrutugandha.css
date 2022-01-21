@@ -9,8 +9,13 @@
     background-color: #f8f9fa;
 }
 #header-container{
+  top:0;
   width: 100%;
   display: block;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+  /* display: absolute; */
 }
 body{
     margin: 0;
@@ -123,6 +128,7 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   margin: 0px;
+  background-color:whitesmoke;
 }
 ul li {
   margin: 20px 40px;
@@ -168,6 +174,7 @@ ul{
   height: 400px;
   position: relative;
   margin: auto;
+  margin-top:150px;
 }
 
 /* Caption text */
