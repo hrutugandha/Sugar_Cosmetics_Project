@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+  }
+  #ft_container {
+    padding: 0 70px;
+    background-color: black;
+    display: block;
+    overflow: hidden;
+  }
+  #footer {
+    color: rgb(133, 128, 128);
+    margin: 0px;
+    padding-top: 0;
+    width: 100%;
+  }
+  .ft_white {
+    color: white;
+    margin-top: 20px;
+  }
+  .ft_row button {
+    width: 150px;
+  }
+  .ft_row {
+    display: flex;
+    justify-content: space-between;
+  }
+  #ft_container a {
+    text-decoration: none;
+    color: rgb(133, 128, 128);
+    font-size: 18px;
+    padding: 2px;
+  }
+  #icons {
+    text-align: center;
+  }
+  #ft_container a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  img[alt="suger cosmetics logo"] {
+    width: 120px;
+    height: 120px;
+  }
+  #ft_logo {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 300px;
+  }
+  #ft_logo img {
+    width: 20px;
+    height: 15px;
+    margin: 0 20px;
+  }
+  #ft_store img {
+    width: 100px;
+    height: 30px;
+  }
+  #ft_store p {
+    margin-top: 4px;
+  }
+ #ft_copyright{
+    width: 200px;
+    font-family: Poppins, sans-serif;
+    color: rgb(133, 128, 128);
+  } 
+  #ft_time {
+    margin-top: 0;
+    width: 200px;
+    font-size: 13px;
+  }
+  input {
+    color: white;
+    font-size: 24px;
+  }
+  input::placeholder {
+    font-size: 22px;
+    margin: 0;
+  }
+  #ft_signup {
+    background-color: rgb(252, 38, 120);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 17px;
+    margin: 20px 4px 0;
+    color: white;
+    font-size: 20px;
+  }
+  #ft_email {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 300px;
+  }
+  #ft_copyright {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 16px;
+    width: 100%;
+    font-family: "poppins", "sans-serif";
+  }
+  hr {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 0) and (max-width: 320px) {
+    #ft_container {
+      padding: 0;
+      width: 100%;
+      margin: 0 auto;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .ft_row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    #ft_copyright {
+      text-align: left;
+      width: 200px;
+    }
+    #ft_logo {
+      justify-content: flex-start;
+      margin: 0;
+    }
+    #footer > div {
+      padding: 30px;
+    }
+    #footer_container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 720px) {
+    #footer > div {
+      padding: 0px;
+    }
+    #footer_container {
+      margin: 0;
+      padding: 0;
+      /* width: 100%; */
+    }
+    #ft_container {
+      padding: 20px;
+      margin: 0px 0;
+      width: 100%;
+    }
+    .ft_row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    #ft_copyright {
+      text-align: left;
+    }
+    .down_center_heading {
+      margin: 10px !important;
+      letter-spacing: 1px !important;
+      font-size: 20px !important;
+    }
+    .hd-last {
+      width:100%;
+    }
+  }
+  
