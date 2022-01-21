@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-a {
+#ft_container a {
   text-decoration: none;
   color: rgb(133, 128, 128);
   font-size: 18px;
@@ -35,7 +35,7 @@ a {
 #icons {
   text-align: center;
 }
-a:hover {
+#ft_container a:hover {
   color: white;
   border-bottom: 1px solid white;
 }
@@ -60,7 +60,7 @@ img[alt="suger cosmetics logo"] {
 #ft_store p {
   margin-top: 4px;
 }
-p {
+#ft_copyright {
   width: 200px;
   font-family: Poppins, sans-serif;
   color: rgb(133, 128, 128);
@@ -163,6 +163,6 @@ hr {
     font-size: 20px !important;
   }
   .hd-last {
-    width:100%;
+    width: 100%;
   }
 }
