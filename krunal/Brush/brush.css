@@ -84,8 +84,19 @@
 .home-img1:hover{
     color:  rgb(5, 88, 255);
 }
-.sort{
-    margin-left: 515px;
+.sort {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 75px;
+}
+#priceSort {
+    min-width: 50px;
+    max-width: 150px;
+}
+#filter {
+    min-width: 50px;
+    max-width: 150px;
 }
 @media only screen and (min-width:351px) and (max-width:850px){
     #container-prod{
