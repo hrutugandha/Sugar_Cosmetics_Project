@@ -1,10 +1,9 @@
 
   #ft_container {
-    padding: 0px;
+    padding: 0 70px;
     background-color: black;
     display: block;
     overflow: hidden;
-    width: 100%;
   }
   #footer {
     color: rgb(133, 128, 128);

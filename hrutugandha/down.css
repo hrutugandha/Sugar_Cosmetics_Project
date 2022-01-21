@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
+    width: 100%;
+    border: 1px solid red;
   }
   .weekly_pics {
     display: flex;
-    margin: 10px;
     justify-content: space-between;
   }
   .weekly_pics img {
@@ -45,6 +46,7 @@
     width: 380px;
     height: 316px;
     margin: 10px;
+    border: 1px solid red;
   }
   .down_center_heading {
     margin: 15px;
@@ -56,7 +58,6 @@
   text-align: center;
   }
   .card_dn button {
-    width: inherit;
     border: none;
     padding: 8px 5px;
     background-color: black;
@@ -87,10 +88,12 @@
     width: 200px;
     height: 250px;
     margin-bottom: 10px;
+    border: 1px solid red;
   }
   .hd-last > img {
     max-width: 277px;
     height: 100%;
+    border: 1px solid red;
   }
   .hd-last {
     width: 80%;
