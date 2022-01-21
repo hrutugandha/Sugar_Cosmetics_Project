@@ -100,7 +100,7 @@ input::placeholder {
   width: 100%;
   font-family: "poppins", "sans-serif";
 }
-hr {
+#ft_container hr {
   margin-right: 0;
 }
 @media only screen and (min-width: 0) and (max-width: 320px) {
@@ -142,7 +142,6 @@ hr {
   #footer_container {
     margin: 0;
     padding: 0;
-    /* width: 100%; */
   }
   #ft_container {
     padding: 20px;
