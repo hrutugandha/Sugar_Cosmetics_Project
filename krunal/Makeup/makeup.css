@@ -127,6 +127,7 @@ p {
 }
 #header {
   height: 90px;
+  width: 100%;
   display: flex;
   background-color: #f8f9fa;
 }
