@@ -1,0 +1,230 @@
+/* body{
+    background-color: rgb(215,215,215);
+} */
+p {
+  all: unset;
+  color: rgb(112, 109, 109);
+}
+#cart-container {
+  margin: 30px 20px 0 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-rows:900px; */
+  grid-gap: 40px;
+  grid-template-areas: "N N N N N N L L L L L L";
+}
+
+.cart-left {
+  grid-area: N;
+  /* background-color: yellow; */
+  /* border: 1px solid blue; */
+  /* margin-right: 10px; */
+}
+
+.cart-right {
+  grid-area: L;
+  /* background-color: red; */
+  /* border: 1px solid red; */
+}
+
+/* .cart_order_summary{
+    width:48%;
+    border: 1px solid red;
+} */
+#price-detail {
+  width: 48%;
+  /* border:1px solid blue; */
+  display: flex;
+}
+.smry-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  color: gray;
+  font-weight: bold;
+}
+.smry-disp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.smry-txt {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-product {
+  margin-top: 20px;
+  /* border: 1px solid green; */
+}
+#divCartlft{
+  /* display: flex; */
+  /* border:1px solid orangered; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+}
+#divImgName{
+  display: flex;
+  width:100%;
+  /* border:1px solid gray;  */
+}
+#pname{
+  justify-content: center;
+}
+#divImgName > img {
+  width: 12%;
+}
+#divImgName > p {
+  padding-top: 30px;
+}
+
+#divBox {
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  /* align-items: stretch; */
+  /* border:1px dotted blue; */
+  margin:auto;
+  /* flex-wrap: wrap; */
+  /* height: 20%; */
+}
+#divBox>div{
+  margin: 0 5px;
+  
+}
+#divPriceBox {
+  display: flex;
+  color: gray;
+  
+}
+
+/* Right Box CSS */
+
+.priceDetail {
+  border: 1px solid rgb(14, 160, 218);
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  
+}
+.offerLogo {
+  /* border:1px solid green; */
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.promo-code {
+  color: red;
+  font-weight: bold;
+  color: rgb(231, 43, 74);
+  border: 1px solid rgb(10, 224, 64);
+}
+.offerLogo > img {
+  margin-right: 5px;
+}
+
+.coupon-box{
+  display: flex;
+  border: 1px solid rgb(40, 38, 167);
+}
+/* input,
+button {
+  font-size: 20px !important;
+  height: 30px !important;
+  color:red !important;
+} */
+input{
+  all: revert;
+  width:160px;
+  color: red;
+  margin: 10px 0;
+  font-size: 25px;
+  margin: 0;
+}
+.price-details{
+  display: flex;
+}
+.price-table,table{
+  width:100%
+}
+/* .price-table,td>td{
+  width: 250px
+} */
+/* #checkOut{
+  all: revert;
+} */
+@media only screen and (min-width: 400px) and (max-width: 710px) {
+  #cart-container {
+    grid-template-rows: 700px, 200px;
+    grid-template-areas:
+      "N N N N N N N N N N N N"
+      "L L L L L L L L L L L L";
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  #cart-container {
+    grid-template-rows: 700px, 200px;
+    grid-template-areas:
+      "N N N N N N N N N N N N"
+      "L L L L L L L L L L L L";
+      
+  }
+  #divCartlft{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  #divBox>div{
+    display: flex;
+    margin: 0 5p;
+    
+  /* justify-content: space-between; */
+  
+  }
+  #divBox{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+  /* #divPriceBox{
+    flex-wrap: wrap;
+      
+  } */
+
+  table{
+    display: flex;
+  }
+}
+
+.fname-phno{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+} 
+
+input{
+  all: revert;
+}
+.price-details{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rt-same{
+  margin-bottom: 10px;
+}
+/* .price-table>table>tbody>tr>td{
+  margin-bottom:50px;
+  border:1px solid red
+} */
+table { margin: .15em; border-collapse: collapse; } 
+td, th { padding: .5em }
+
