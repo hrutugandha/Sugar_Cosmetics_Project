@@ -49,3 +49,33 @@ a{
    text-decoration: none;
    color: rgb(243, 217, 217);
 }
+/* Small Screen */
+@media only  screen  and (min-width: 0px) and (max-width: 320px){
+   /* .main{
+      
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: 250px ;
+       color: white;
+      } */
+
+      .main{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: 110px;
+         margin: 5% 10% 0% 5%;
+          grid-template-areas: 
+          "a a a a a a a a a a a a"
+          "b b b b b b b b b b b b"
+          "c c c c c c c c c c c c";
+        
+     }
+  }
+   
+   /* Medium Screen */
+   
+   @media only screen and (min-width: 321px) and (max-width: 720px){
+   .main{ 
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: 300px ;
+   
+   }
