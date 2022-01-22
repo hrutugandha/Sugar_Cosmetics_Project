@@ -18,17 +18,11 @@
         </div>
         <div class="searchbar">
           <input
-            class="search_input"
             type="text"
-            name=""
+            class="search_input"
             placeholder='Try "Liquid Lipstick"'
-            value=""
           />
-          <a
-            href="https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1642505397~hmac=65ce7d4e825bb56d1dd524c195208a85"
-            class="search_icon"
-            >Search</a
-          >
+          <a href="" class="search_icon">Search</a>
         </div>
         <div class="login_btn">
           <img
@@ -38,37 +32,49 @@
           <u>Login/Sign-up</u>
         </div>
         <div class="cute_btn">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png"
-            alt=""
-            placeholder="Wishlist"
-          />
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/726/726564.png"
-            alt=""
-            placeholder="cart"
-          />
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/879/879859.png"
-            alt=""
-            placeholder="Discount"
-          />
+
+            <img id="wishlist"
+              src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png"
+              alt="wishlist"
+              placeholder="Wishlist"
+            />
+            <img  id="cart"
+              src="https://cdn-icons-png.flaticon.com/512/726/726564.png"
+              alt="cart"
+              placeholder="cart"
+            />
+
+
+            <img id="discount"
+              src="https://cdn-icons-png.flaticon.com/512/879/879859.png"
+              alt="discount"
+              placeholder="Discount"
+            />
+
         </div>
       </div>
       <div id="home_nav">
         <ul>
           <li>
-            <a href="" class="nav_link" style="padding-left: 20px"> MAKEUP</a>
+            <a href="makeup.html" class="nav_link" style="padding-left: 20px">
+              MAKEUP</a
+            >
             <div class="dropdown-makeup">
               <ul>
-                <li>LIPS</li>
-                <li>FACE</li>
-                <li>EYES</li>
+                <li>
+                  <a href="makeup.html">LIPS</a>
+                </li>
+                <li>
+                  <a href="makeup.html">FACE</a>
+                </li>
+                <li>
+                  <a href="makeup.html">EYES</a>
+                </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="" class="nav_link">BRUSHES</a>
+            <a href="brush.html" class="nav_link">BRUSHES</a>
             <div class="dropdown-makeup">
               <ul>
                 <li>FACE BRUSHES</li>
@@ -276,186 +282,190 @@
 <!-- <script type="text/javascript" src="brush.js"></script> -->
 
 <script>
+  var brushData = [
+    {
+      image_url:
+        "https://i.ibb.co/y6GRWj2/Blend-Trend-Face-Brush-006-Highlighter.jpg",
+      name: "Blend Trend Dual Eyeshadow",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.6,
+      reviews: "(15)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/48bJX9K/Blend-Trend-WBG-images-13.jpg",
+      name: "Blend Trend Face Brush",
+      price: 349,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(3)",
+      product: "face",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/ssJSpWF/Blend-Trend-WBG-images-14-1.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/gZqXwpV/Blend-Trend-Foundation-Brush-051-Flat.jpg",
+      name: "Blend Trend Foundation Brush",
+      price: 499,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(2)",
+      product: "found",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/mcw8MXY/Blend-Trend-Face-Brush-001-Blush.jpg",
+      name: "Blend Trend Face Brush - 01",
+      price: 369,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.8,
+      reviews: "(4)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/tQtXRVy/Blend-Trend-WBG-images-5-min.jpg",
+      name: "Blend Trend Dual Eyeshadow",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.9,
+      reviews: "(50)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/f19n9dz/Blend-Trend-WBG-images-3-min.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/dW8ZZx1/Blend-Trend-WBG-images-2-min.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/ScNpF3S/Blend-Trend-WBG-images-12-min.jpg",
+      name: "Blend Trend Dual Face",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.8,
+      reviews: "(19)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/1nLCyH5/Blend-Trend-Foundation-Brush-052-Kabuki.jpg",
+      name: "Blend Trend Foundation Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.9,
+      reviews: "(7)",
+      product: "found",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/WGMpyjX/Blend-Trend-Face-Brush-002-Concealer.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/B3nZ113/Blend-Trend-Face-Brush-003-Contour.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(2)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/PhX4jC4/Blend-Trend-Face-Brush-007-Powder.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(5)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/2g7GZvb/Beginners-Essentials-Combo1-WBGimages.jpg",
+      name: "Beginners Essential Combo 1",
+      price: 999,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/qkXn8t5/Beginners-Essentials-Combo2-WBGimages.jpg",
+      name: "Beginners Essential Combo 1",
+      price: 799,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.4,
+      reviews: "(2)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/0crjDZv/Beginners-Essentials-Combo3-WBGimages.jpg",
+      name: "Face Essential Combo",
+      price: 1499,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/n6NtFBj/1-1.jpg",
+      name: "Eyes & FACE Combo",
+      price: 649,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+  ];
 
-   var brushData=[
-        {
-           image_url:"https://i.ibb.co/y6GRWj2/Blend-Trend-Face-Brush-006-Highlighter.jpg",
-           name:"Blend Trend Dual Eyeshadow",
-           price:599,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.6,
-           reviews:"(15)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/48bJX9K/Blend-Trend-WBG-images-13.jpg",
-           name:"Blend Trend Face Brush",
-           price:349,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(3)",
-           product:"face",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/ssJSpWF/Blend-Trend-WBG-images-14-1.jpg",
-           name:"Blend Trend Eyeshadow Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/gZqXwpV/Blend-Trend-Foundation-Brush-051-Flat.jpg",
-           name:"Blend Trend Foundation Brush",
-           price:499,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(2)",
-           product:"found",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/mcw8MXY/Blend-Trend-Face-Brush-001-Blush.jpg",
-           name:"Blend Trend Face Brush - 01",
-           price:369,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.8,
-           reviews:"(4)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/tQtXRVy/Blend-Trend-WBG-images-5-min.jpg",
-           name:"Blend Trend Dual Eyeshadow",
-           price:599,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.9,
-           reviews:"(50)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/f19n9dz/Blend-Trend-WBG-images-3-min.jpg",
-           name:"Blend Trend Eyeshadow Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/dW8ZZx1/Blend-Trend-WBG-images-2-min.jpg",
-           name:"Blend Trend Eyeshadow Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/ScNpF3S/Blend-Trend-WBG-images-12-min.jpg",
-           name:"Blend Trend Dual Face",
-           price:599,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.8,
-           reviews:"(19)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/1nLCyH5/Blend-Trend-Foundation-Brush-052-Kabuki.jpg",
-           name:"Blend Trend Foundation Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.9,
-           reviews:"(7)",
-           product:"found",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/WGMpyjX/Blend-Trend-Face-Brush-002-Concealer.jpg",
-           name:"Blend Trend Face Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/B3nZ113/Blend-Trend-Face-Brush-003-Contour.jpg",
-           name:"Blend Trend Face Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(2)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/PhX4jC4/Blend-Trend-Face-Brush-007-Powder.jpg",
-           name:"Blend Trend Face Brush",
-           price:399,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(5)",
-           product:"shadow",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/2g7GZvb/Beginners-Essentials-Combo1-WBGimages.jpg",
-           name:"Beginners Essential Combo 1",
-           price:999,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"combo",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/qkXn8t5/Beginners-Essentials-Combo2-WBGimages.jpg",
-           name:"Beginners Essential Combo 1",
-           price:799,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:4.4,
-           reviews:"(2)",
-           product:"combo",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/0crjDZv/Beginners-Essentials-Combo3-WBGimages.jpg",
-           name:"Face Essential Combo",
-           price:1499,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"combo",
-           count:1,
-        },
-        {
-           image_url:"https://i.ibb.co/n6NtFBj/1-1.jpg",
-           name:"Eyes & FACE Combo",
-           price:649,
-           star_url:"https://i.ibb.co/4d3n7ZC/star.png",
-           rating:5,
-           reviews:"(1)",
-           product:"combo",
-           count:1,
-        },
-    ]
-    
-    
-    localStorage.setItem("brushData",JSON.stringify(brushData));
-    
-    
-    
-    
+  localStorage.setItem("brushData", JSON.stringify(brushData));
 
   var brushData = JSON.parse(localStorage.getItem("brushData"));
   var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
@@ -565,8 +575,4 @@
     localStorage.setItem("listItems", JSON.stringify(wishlistArr));
     alert("Item added to wish list");
   }
-
-
-
-
 </script>
