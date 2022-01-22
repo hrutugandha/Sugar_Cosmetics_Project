@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wishlist</title>
     <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
-</head>
+    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="nav2.css">
+<link rel="stylesheet" href="homepage.css">
 <style>
     
    .main2{
@@ -17,7 +20,6 @@
        margin: 30px 300px 0px 50px ;
        font-weight: 700;
        color: rgb(56, 53, 53);
-       background-color: white;
        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    }
    .main2 h3{
@@ -27,108 +29,164 @@
    #add{
        margin:30px 0px 0px 50px ;
    }
+   
+ 
+
+
 </style>
 <body>
- <!--------------Header--------------->
- <div id="header-container">
-  <div id="header">
-      <div class="logo">
-          <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="">
-      </div>
-      <div class="searchbar">
-        <input type="text" class="search_input" placeholder="Try &quot;Liquid Lipstick&quot;">
-          <a href=""class="search_icon">Search</a>
+  <div id="header-container">
+      <div id="header">
+        <div class="logo">
+          <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="" />
         </div>
-      <div class="login_btn">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
-          <u>Login/Sign-up</u>
+        <div class="searchbar">
+          <input
+            type="text"
+            class="search_input"
+            placeholder='Try "Liquid Lipstick"'
+          />
+          <a href="" class="search_icon">Search</a>
+        </div>
+
+
+        
+        <div class="login_btn">
+          <img
+            src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+            alt=""
+          />
+
+<div onclick="window.location.href='login.html'">LOGIN</div>
+          <div onclick="window.location.href='signup.html'">SIGN UP</div>
+
+          <!-- <div href="login.html" class="btn_login" >LOGIN/</div>
+         <div href="signup.html"  class="btn_login" >SIGN IN</div> -->
+        </div>
+
+
+
+
+        <div class="cute_btn">
+
+            <img id="wishlist"
+              src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png"
+              alt="wishlist"
+              placeholder="Wishlist"
+            />
+            <img  id="cart"
+              src="https://cdn-icons-png.flaticon.com/512/726/726564.png"
+              alt="cart"
+              placeholder="cart"
+            />
+
+
+            <img id="discount"
+              src="https://cdn-icons-png.flaticon.com/512/879/879859.png"
+              alt="discount"
+              placeholder="Discount"
+            />
+
+        </div>
       </div>
-      <div class="cute_btn">
-          <img src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png" alt="" placeholder="Wishlist">
-          <img src="https://cdn-icons-png.flaticon.com/512/726/726564.png" alt="" placeholder="cart">
-          <img src="https://cdn-icons-png.flaticon.com/512/879/879859.png" alt="" placeholder="Discount">
-      </div>
-  </div>
       <div id="home_nav">
-          <ul>
+        <ul>
           <li>
-              <a href="" class="nav_link" style="padding-left: 20px;"> MAKEUP</a>
-              <div class="dropdown-makeup">
+            <a href="makeup.html" class="nav_link" style="padding-left: 20px">
+              MAKEUP</a
+            >
+            <div class="dropdown-makeup">
               <ul>
-                  <li>LIPS</li>
-                  <li>FACE</li>
-                  <li>EYES</li>
+                <li>
+                  <a href="makeup.html">LIPS</a>
+                </li>
+                <li>
+                  <a href="makeup.html">FACE</a>
+                </li>
+                <li>
+                  <a href="makeup.html">EYES</a>
+                </li>
               </ul>
-              </div>
+            </div>
           </li>
           <li>
-              <a href="" class="nav_link">BRUSHES</a>
-              <div class="dropdown-makeup">
+            <a href="brush.html" class="nav_link">BRUSHES</a>
+            <div class="dropdown-makeup">
               <ul>
-                  <li>FACE BRUSHES</li>
-                  <li>EYE BRUSHES</li>
+                <li>FACE BRUSHES</li>
+                <li>EYE BRUSHES</li>
               </ul>
-              </div>
+            </div>
           </li>
           <li>
-              <a href="" class="nav_link"> SKINCARE </a>
-              <div class="dropdown-makeup">
+            <a href="" class="nav_link"> SKINCARE </a>
+            <div class="dropdown-makeup">
               <ul>
-                  <li>MOISTURIZERS</li>
-                  <li>MASKS</li>
-                  <li>SETTING MISTS</li>
-                  <li>COFFEE CULTURE RANGE</li>
-                  <li>SHEET MASK COMBO</li>
+                <li>MOISTURIZERS</li>
+                <li>MASKS</li>
+                <li>SETTING MISTS</li>
+                <li>COFFEE CULTURE RANGE</li>
+                <li>SHEET MASK COMBO</li>
               </ul>
-              </div>
+            </div>
           </li>
           <li>
-              <a href="" class="nav_link"> TRENDING </a>
-              <div class="dropdown-makeup">
+            <a href="" class="nav_link"> TRENDING </a>
+            <div class="dropdown-makeup">
               <ul>
-                  <li>SUGAR MERCH STATION</li>
-                  <li>MINIS SET</li>
-                  <li>MAKEUP KITS</li>
-                  <li>BESTSELLERS</li>
+                <li>SUGAR MERCH STATION</li>
+                <li>MINIS SET</li>
+                <li>MAKEUP KITS</li>
+                <li>BESTSELLERS</li>
               </ul>
-              </div>
+            </div>
           </li>
           <li>
-              <a href="" class="nav_link">BLOG </a>
-              <div class="dropdown-makeup">
+            <a href="" class="nav_link">BLOG </a>
+            <div class="dropdown-makeup">
               <ul>
-                  <li>FEATURED</li>
-                  <li>MAKEUP</li>
-                  <li>SKINCARE</li>
+                <li>FEATURED</li>
+                <li>MAKEUP</li>
+                <li>SKINCARE</li>
               </ul>
-              </div>
+            </div>
           </li>
           <li>
-              <a href="" class="nav_link">OFFERS</a>
+            <a href="" class="nav_link">OFFERS</a>
           </li>
-          </ul>
+        </ul>
       </div>
-</div>
-             
+    </div>
+  <div id="distance_from_top">
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
+      <span> <a href="wishlist.html">Wishlist</a></span>
+    </p><br>
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
+      <span class="name"></span>
+    </p>
+    
+  </div>
     <div class="main">
-        <div id="A" class="gap"> <a href="order.html"> 
-            <h2 style="margin: 0px;">Orders</h2>
+        <div id="A"> <a href="order.html"> 
+            <h2>Orders</h2>
             <p>Order status History Updates..</p>
            </a>
         </div>
-        <div id="B" class="gap">
-            <a href="personalinfo.html"><h2 style="margin: 0px;">Personal Info</h2>
+        <div id="B">
+            <a href="personalinfo.html"><h2>Personal Info</h2>
                 <p>Save addresses add new addresses</p>
             </a>
         </div>
-        <div class="gap">
+        <div>
             <a href="wishlist.html">
-                <h2 style="margin: 0px;">Wishlist</h2>
+                <h2>Wishlist</h2>
                 <p>Your favourites, order now!</p>
             </a>
         </div>
-        <div class="gap">
-         <a href="refer.html">   <h2 style="margin: 0px;">Refer & Earn</h2>
+        <div>
+         <a href="refer.html">   <h2>Refer & Earn</h2>
             <p>Referral earnings</p>
         </a>
        </div>
@@ -136,15 +194,15 @@
     <div class="main2">
         <div>
             <p>Full Name</p>
-            <h3>Balram</h3>
+            <h3 id="name"></h3>
         </div>
         <div>
             <p>Phone Number</p>
-            <h3>989898989898</h3>
+            <h3>9876543210</h3>
         </div>
         <div>
             <p>Email Address</p>
-            <h3>pba@gmail.com</h3>
+            <h3 > <span id="name"> </span> 123@gmail</h3>
         </div>
     </div>
     <div id="add">
@@ -283,4 +341,29 @@
         </div>
       </div>
 </body>
+<script>
+       document.querySelector(".name ").innerHTML= localStorage.getItem("login_user_name");
+       document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
+</script>
 </html>
+
+
+<script>
+ var cart = document.querySelector("#cart");
+cart.addEventListener('click', function(){
+  window.location.href ="cartPage.html"
+})
+ var wishlist = document.querySelector("#wishlist");
+wishlist.addEventListener('click', function(){
+  window.location.href ="wishlist.html"
+})
+ var discount = document.querySelector("#discount");
+discount.addEventListener('click', function(){
+  window.location.href ="discount.html"
+})
+  
+   var logo = document.querySelector(".logo");
+logo.addEventListener('click', function(){
+  window.location.href ="homepage.html"
+})
+</script>
