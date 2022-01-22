@@ -1,0 +1,104 @@
+#down_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    border: 1px solid red;
+  }
+  .weekly_pics {
+    display: flex;
+    justify-content: space-between;
+  }
+  .weekly_pics img {
+    width: 300px;
+    height: 175px;
+    margin: 0 50px;
+  }
+  .cards {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-evenly;
+  }
+  .down_two_img {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px;
+  }
+  .down_two_img img {
+    width: 522px;
+    height: 100%;
+  }
+  .down_rupees {
+    padding: 0;
+    margin: 0;
+    line-height: 0.35em;
+  }
+  
+  .down_rupees :nth-child(3) {
+    color: rgb(219, 91, 198);
+  }
+  .down_rupees :nth-child(1) {
+    text-decoration: line-through;
+  }
+  .cards > img {
+    width: 380px;
+    height: 316px;
+    margin: 10px;
+    border: 1px solid red;
+  }
+  .down_center_heading {
+    margin: 15px;
+    font-size: 34px;
+    font-weight: lighter;
+  padding: 20px;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  }
+  .card_dn button {
+    border: none;
+    padding: 8px 5px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+  }
+  .card_dn button:hover {
+    background-color: #ff0a54;
+    color: black;
+  }
+  .card_dn {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    margin: 20px;
+    width: 200px;
+    /* border: 2px solid red; */
+  }
+  .card_dn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .card_dn div {
+    margin: 5px 0 10px 0;
+  }
+  .card_dn img {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+  }
+  .hd-last > img {
+    max-width: 277px;
+    height: 100%;
+    border: 1px solid red;
+  }
+  .hd-last {
+    width: 80%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 10px;
+    /* flex-direction: column; */
+  }
