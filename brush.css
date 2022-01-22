@@ -1,0 +1,435 @@
+#container-prod{
+    width:85%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    gap:50px;
+}
+#main{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#main:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#image{
+   margin: 0px 20px 0px 20px;
+    width:85%;
+    height: 241px;
+}
+#textCenter{
+    text-align: center;
+}
+#star{
+    width:20px;
+    height: 20px;
+}
+#flex{
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+#flex:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+}
+#flex>p{
+    margin-top: 0px;
+}
+#btn{
+    background-color:pink;
+    color: white;
+    border: none;
+    padding:0px 30px;
+}
+#btn:hover{
+    background-color:black;
+    cursor:pointer;
+    color:white;
+}
+#btn1{
+    border: none;
+    background-color:pink;
+    color:white;
+}
+#btn1:hover{
+    background-color:black;
+    cursor: pointer;
+    color:white;
+}
+#flex1{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#displayBar{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+#displayitem{
+    margin:5px 0px 0px 38px;
+}
+.home-img{
+    width:3%;
+    text-decoration: none;
+}
+.home-img1{
+    margin: 0px 10px;
+    text-decoration: none;
+    color:  rgb(117,131,159);
+}
+.home-img1:hover{
+    color:  rgb(5, 88, 255);
+}
+.sort {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 75px;
+}
+#priceSort {
+    min-width: 50px;
+    max-width: 150px;
+}
+#filter {
+    min-width: 50px;
+    max-width: 150px;
+}
+@media only screen and (min-width:351px) and (max-width:850px){
+    #container-prod{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (min-width:0px) and (max-width:350px){
+    #container-prod{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+#container-prod{
+    height: auto;  
+}
+#header{
+    height: 90px;
+    display: flex;
+    background-color: #f8f9fa;
+}
+#header-container{
+    width: 100%;
+}
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.logo{
+    padding: 20px;
+    width: 13%
+}
+.logo > img{
+    margin-left: 35px;
+}
+input{
+    caret-color:transparent;
+    height: 40px;
+}
+.searchbar{
+    margin-top: 24px;
+    width: 50%;
+    height: 40px;
+    border: 0;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.search_input{
+    border:0px;
+    border-color: white;
+    background: none;
+    caret-color:transparent;
+    height: 40px;
+    padding: 0 20px;
+    width: 80%;
+    color: black;
+    border-radius: 30px 0px 0px 30px;
+}
+.searchbar > .search_icon{
+    color: white;
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    justify-content: center;
+}
+.search_icon {
+    height: 40px;
+    width: 120px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    background-color:white;
+    padding: 0 20px;
+}
+.login_btn{
+    cursor: pointer;
+    width: 24%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.login_btn > img {
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    background-color: #f8f9fa;
+    color: #f8f9fa;
+}
+.cute_btn{
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  8%;
+}
+.cute_btn > img{
+    padding:  8px;
+    color: #495057;
+    height: 15px;
+    color: #495057;
+}
+#dropdown_container {
+    width: 100%;
+    margin: 0px;
+    height: 30px;
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding: 10px;
+}
+.dropdown_menu > div{
+    color: #707477e8;
+    font-size: small;
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+#home_nav ul {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+ul li {
+    margin: 20px 40px;
+    position: relative;
+}
+.dropdown-makeup ul {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column !important;
+    padding: 0;
+}
+.dropdown-makeup ul li {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+}
+.dropdown-makeup {
+    display: none;
+}
+li:hover > .dropdown-makeup {
+    background-color: white;
+    display: block;
+}
+ul{
+    padding: 0px;
+}
+.nav_link{
+    color: #707477e8;
+    font-size: small;
+    text-decoration: none;
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+.nav_link:hover{
+    color: transparent;
+    text-shadow: 0 0 1px rgb(15, 13, 13);
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+  }
+  #ft_container {
+    padding: 0 70px;
+    background-color: black;
+    display: block;
+    overflow: hidden;
+  }
+  #footer {
+    color: rgb(133, 128, 128);
+    margin: 0px;
+    padding-top: 0;
+    width: 100%;
+  }
+  .ft_white {
+    color: white;
+    margin-top: 20px;
+  }
+  .ft_row button {
+    width: 150px;
+  }
+  .ft_row {
+    display: flex;
+    justify-content: space-between;
+  }
+  #ft_container a {
+    text-decoration: none;
+    color: rgb(133, 128, 128);
+    font-size: 18px;
+    padding: 2px;
+  }
+  #icons {
+    text-align: center;
+  }
+  #ft_container a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  img[alt="suger cosmetics logo"] {
+    width: 120px;
+    height: 120px;
+  }
+  #ft_logo {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 300px;
+  }
+  #ft_logo img {
+    width: 20px;
+    height: 15px;
+    margin: 0 20px;
+  }
+  #ft_store img {
+    width: 100px;
+    height: 30px;
+  }
+  #ft_store p {
+    margin-top: 4px;
+  }
+  #ft_copyright {
+    width: 200px;
+    font-family: Poppins, sans-serif;
+    color: rgb(133, 128, 128);
+  }
+  #ft_time {
+    margin-top: 0;
+    width: 200px;
+    font-size: 13px;
+  }
+  input {
+    color: white;
+    font-size: 24px;
+  }
+  input::placeholder {
+    font-size: 22px;
+    margin: 0;
+  }
+  #ft_signup {
+    background-color: rgb(252, 38, 120);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 17px;
+    margin: 20px 4px 0;
+    color: white;
+    font-size: 20px;
+  }
+  #ft_email {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 300px;
+  }
+  #ft_copyright {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 16px;
+    width: 100%;
+    font-family: "poppins", "sans-serif";
+  }
+  hr {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 0) and (max-width: 320px) {
+    #ft_container {
+      padding: 0;
+      width: 100%;
+      margin: 0 auto;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .ft_row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    #ft_copyright {
+      text-align: left;
+      width: 200px;
+    }
+    #ft_logo {
+      justify-content: flex-start;
+      margin: 0;
+    }
+    #footer > div {
+      padding: 30px;
+    }
+    #footer_container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 720px) {
+    #footer > div {
+      padding: 0px;
+    }
+    #footer_container {
+      margin: 0;
+      padding: 0;
+      /* width: 100%; */
+    }
+    #ft_container {
+      padding: 20px;
+      margin: 0px 0;
+      width: 100%;
+    }
+    .ft_row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    #ft_copyright {
+      text-align: left;
+    }
+    .down_center_heading {
+      margin: 10px !important;
+      letter-spacing: 1px !important;
+      font-size: 20px !important;
+    }
+    .hd-last {
+      width: 100%;
+    }
+  }

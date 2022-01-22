@@ -1,8 +1,4 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Poppins, sans-serif;
-  }
+
   #ft_container {
     padding: 0 70px;
     background-color: black;
@@ -26,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  #ft_container a {
+  a {
     text-decoration: none;
     color: rgb(133, 128, 128);
     font-size: 18px;
@@ -35,7 +31,7 @@ body {
   #icons {
     text-align: center;
   }
-  #ft_container a:hover {
+  a:hover {
     color: white;
     border-bottom: 1px solid white;
   }
@@ -60,19 +56,15 @@ body {
   #ft_store p {
     margin-top: 4px;
   }
- #ft_copyright{
+  p {
     width: 200px;
     font-family: Poppins, sans-serif;
     color: rgb(133, 128, 128);
-  } 
+  }
   #ft_time {
     margin-top: 0;
     width: 200px;
     font-size: 13px;
-  }
-  input {
-    color: white;
-    font-size: 24px;
   }
   input::placeholder {
     font-size: 22px;
@@ -81,7 +73,8 @@ body {
   #ft_signup {
     background-color: rgb(252, 38, 120);
     border: none;
-    border-radius: 5px;
+    height: 50px;
+    border-radius: 30px;
     padding: 4px 17px;
     margin: 20px 4px 0;
     color: white;
@@ -103,16 +96,7 @@ body {
   hr {
     margin-right: 0;
   }
-  @media only screen and (min-width: 0) and (max-width: 320px) {
-    #ft_container {
-      padding: 0;
-      width: 100%;
-      margin: 0 auto;
-    }
-    body {
-      padding: 0;
-      margin: 0;
-    }
+  @media only screen and (min-width: 0) and (max-width: 720px) {
     .ft_row {
       justify-content: space-between;
       flex-direction: column;
@@ -129,45 +113,4 @@ body {
     #footer > div {
       padding: 30px;
     }
-    #footer_container {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
   }
-  @media only screen and (min-width: 321px) and (max-width: 720px) {
-    #footer > div {
-      padding: 0px;
-    }
-    #footer_container {
-      margin: 0;
-      padding: 0;
-      /* width: 100%; */
-    }
-    #ft_container {
-      padding: 20px;
-      margin: 0px 0;
-      width: 100%;
-    }
-    .ft_row {
-      justify-content: space-between;
-      flex-direction: column;
-      margin: 10px 0;
-    }
-    #ft_copyright {
-      text-align: left;
-    }
-    .down_center_heading {
-      margin: 10px !important;
-      letter-spacing: 1px !important;
-      font-size: 20px !important;
-    }
-    .hd-last {
-      width:100%;
-    }
-  }
-  img[alt="suger cosmetics logo"] {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-}
