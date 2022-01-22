@@ -244,10 +244,11 @@
      //  console.log(regdUsers);
     
 
-      //  var email = document.querySelector("#email").value;
+      // var email = document.querySelector("#email").value;
         var pass = document.querySelector("#pass").value;
         var user = document.querySelector("#user").value;
-
+     
+       
            var flag=false;
         for(var i = 0; i < regdUsers.length ; i++) {
             //console.log(regdUsers[i].userName);
@@ -255,11 +256,10 @@
             if(regdUsers[i].userName == user &&  regdUsers[i].passwd == pass )
             {
                 flag=true;
-           
-        
-            
-                  
-          
+                localStorage.setItem("login_user_name",user);
+
+              
+
             }
           
         }
@@ -269,7 +269,7 @@
                   console.log("hello you have to login");
                   
                   window.location.href ="wishlist.html";
-                  alert("You are success fully Loged in");
+                //   alert("You are success fully Loged in");
        
                 }
           else {
