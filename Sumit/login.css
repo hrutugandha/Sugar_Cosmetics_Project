@@ -1,0 +1,82 @@
+
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px ;
+    color: white;
+    background-color:#f1a0c8;
+     text-align: center;
+     margin:10% 30% 0% 30%;
+     border-radius: 2px;
+     padding-bottom: 3%;
+     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+    }
+ 
+input{
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input:hover{
+color: white;
+background-color: thistle;
+
+}
+#sub:hover {
+/* background-color: whitesmoke; */
+color:rgb(245, 40, 245);
+}
+/* Small Screen */
+@media only  screen  and (min-width: 0px) and (max-width: 320px){
+.main{
+   
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 250px ;
+    color: white;
+   }
+
+input{
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 6px 10px;
+    margin: 4px 0;
+   
+}
+
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 321px) and (max-width: 720px){
+.main{ 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px ;
+
+}
+input{
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 8px 16px;
+    margin: 4px 0;
+  
+}
+}
+#bottom_text{
+font-weight: 550;
+font-size: medium;
+color:rgb(60, 100, 145);
+margin-top: 8%;
+
+}
+span{
+font-size: 12px;
+font-weight: 700px;
+color: black;
+}
