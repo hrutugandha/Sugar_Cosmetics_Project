@@ -33,16 +33,16 @@
     border-radius: 10px;
     padding: 4px 20px 10px 32px ;
 }
-.main :nth-child(3):hover{
+.main:nth-child(3):hover{
    background-color:#dd6c55;
 }
-.main :nth-child(4){
+.main:nth-child(4){
     background-color:#40a3e0;
     grid-area: d;
     border-radius: 5px;
- padding: 4px 20px 10px 32px ; */
+ padding: 4px 20px 10px 32px ; 
 }
-.main :nth-child(4):hover{
+.main:nth-child(4):hover{
    background-color:#7ac2ee;
 }
 a{
@@ -51,13 +51,6 @@ a{
 }
 /* Small Screen */
 @media only  screen  and (min-width: 0px) and (max-width: 320px){
-   /* .main{
-      
-       grid-template-columns: repeat(1, 1fr);
-       grid-template-rows: 250px ;
-       color: white;
-      } */
-
       .main{
          display: grid;
          grid-template-columns: repeat(1, 1fr);
