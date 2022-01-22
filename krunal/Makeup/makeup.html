@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="cart.css">
-
-    <link rel="stylesheet" href="nav2.css">
-
-    
+    <title>Makeup: Buy Makeup products Online at Best Price | SUGAR Cosmetics</title>
    
+    <link rel="stylesheet" href="makeup.css">
 </head>
 <body>
-    <!--------------Header--------------->
-    <div id="header-container">
+     <!--------------Header--------------->
+     <div id="header-container">
         <div id="header">
             <div class="logo">
                 <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="">
@@ -95,121 +90,39 @@
             </div>
     </div>
        <!--------------Header-end--------------->
+    <div id="displayBar">
+    <div class="homeIcon">
+        <a href="#">
+            <img class="home-img" src="https://i.ibb.co/9cxQD2K/home.png">
+        </a>
+       
+        <a class="home-img1" href="makeup.html">/ Makeup</a>
+       
 
-    <!---------- Cart Page Start ------------->
-    <div class="icon-div">
-      <p class="icon">
-        <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
-        <span> <a href="wishlist.html">Wishlist</a></span>
-      </p><br>
-      <p class="icon">
-        <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
-        <span class="name"></span> <span> <a href="login.html.html"></a></span>
-      </p>
-      
     </div>
-  
-
-    <!-- left Portion -->
-    <div id="cart-container">
-
-        <!-- Left Box -->
-        <div class="cart-left">
-            <div class="cart_order_summary">
-                <div class="smry-box">
-                    <div class="smry-disp">
-                        <div class="smry-logo">
-                            <img src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg" width="20px" height="20px" class="" alt="Cart Logo">
-                        </div>
-                        <div class="smry-txt">Order Summary</div>
-                    </div>
-                    <div class="smry-cart-total" id="total">Card Total : 0</div>
-                </div>
-                <div class="cart-product">
-                    <div>
-                        
-                    </div>
-                    
-                    <div class="product-spec"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Right Box -->
-        <div class="cart-right">
-          <div class="UserInfo">
-            <div class="rt-same">
-              <img src="https://in.sugarcosmetics.com/desc-images/CustomerInformation.svg" alt="logo">
-              <p>Contact Information</p> 
-            </div>
-            <div class="fname-phno">
-              <div class="fname">
-                <p>First Name : Sumit Ranjan</p>
-              </div>
-              <div class="usrPhno">
-                <p>Phone No : 985695895</p>
-              </div>
-            </div>
-            <div class="rt-same">
-              <p>Email: sumit@gmail.com </p> 
-            </div>
-          </div>
-          <div class="rt-same">
-            <img src="https://in.sugarcosmetics.com/desc-images/Offers_price_details.svg" alt=" logo">
-            <p>Offers and Price Details</p> 
-          </div>
-          <div class="rt-same">
-            <img src="https://in.sugarcosmetics.com/desc-images/Offers_icon.svg" alt="Offer icon">
-            <p>Apply "masai30" to get 30% off</p> 
-          </div>
-          <div class="discount-txt">
-            <div class="rt-same">
-              <img src="https://in.sugarcosmetics.com/desc-images/GiftCard.svg" alt="Offer icon">
-              <p>Discount Code:</p> 
-            </div>
-            </div discount-aply>
-            <form>
-              <input type="text" id="coupon" placeholder="Enter Coupon" />
-              <input type="submit" id="coupn-apply" value="Apply">
-            </form>
-            <h3 class="invalid-coupon"></h3>
-            <h3 class="valid-coupon"></h3>
-            
-            <div class="rt-same">
-              <img src="https://in.sugarcosmetics.com/desc-images/PriceDetails.svg" alt="icon">
-              <p>Price Details</p> 
-            </div>
-
-            <div class="price-table">
-              <table>
-                  <tbody>
-                      <tr>
-                          <td >Cart Sub Total</td>
-                          <td id="cart-total"></td>
-                      </tr>
-                      <tr>
-                          <td>Shipping Cost:</td>
-                          <td>0</td>
-                      </tr>
-                      <tr>
-                          <td>Discount Applied:</td>
-                          <td id="disc-applied"></td>
-                      </tr>
-                      <tr>
-                          <td >Amount Payable:</td>
-                          <td id="pay-amount"></td>
-                      </tr>
-                  </tbody>
-              </table>
-              <div clas="checkout-btn">
-                  <button id="checkOut">Proceed To Payment</button>
-              </div>
-          </div>
-
-          </div>
-        </div>
-    </div>
-
-    <!--------------- Footer START--------------------->
+    <div class="sort">
+    <select id="priceSort" onchange="handlerPriceSort()">
+        <option src="" value=""> Sorting</option>
+        <option value="high">Price - High to Low</option>
+        <option value="low">Price - Low to High</option>
+        <option value="rel">Relevance</option>
+    </select>
+    <select name="" id="filter" onchange="filter()">
+        <option value="">Select Product</option>
+        <option value="kajal">Kajal</option>
+        <option value="mascara">Mascara</option>
+        <option value="eye">Eyeliner</option>
+        <option value="crayon">Crayon Lipstick</option>
+        <option value="vivid">Vivid Lipstick</option>
+        <option value="matte">Matte Lipstick</option>
+        <option value="blush">Blush</option>
+        <option value="primer">Primer</option>
+        <option value="found">Foundation & Powder</option>
+    </select>
+</div>
+</div>
+<div id="displayitem"> </div>
+    <div id="container-prod"></div>
     <div id="ft_container">
         <div id="footer">
           <div id="icons" class="ft_white">
@@ -339,9 +252,6 @@
           </div>
         </div>
       </div>
-      <!------------ Foooter End ------------------------->
-
 </body>
-</html>
-<script src="cart.js"></script>
-    <script src="https://kit.fontawesome.com/74404664ae.js" crossorigin="anonymous"></script>
+ </html>
+ <script type="text/javascript" src="makeup.js"></script>
