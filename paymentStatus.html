@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="main">
+       
+        <form>
+            <h2>Enter OTP </h2>
+            <p>Use '1234' as otp for payment success</p>
+           <input type="text" name="" id="user" class="otp" placeholder="Enter OPT You Received"><br><br>
+           <input type="submit" id="sub" value="Submit">
+        </form>
+         
+        </div>
+    <!-- <h2>Enter OTP</h2>
+    <h4>Use 1234 as OTP</h4>
+    <form action="">
+    <input type="text" id="otp" size="1" minlength="4" maxlength="4"><br><br>
+    <input type="submit" id="conf" value="Confirm">  -->
+ </form>
+</body>
+</html>
+
+
+<script>
+
+    document.querySelector("form").addEventListener("submit", payment);
+
+
+
+function payment(event) {
+  event.preventDefault();
+    var otpValue=document.querySelector(".otp").value;
+    if(otpValue==1234){
+        alert("Payment Success, Redirect to Home Page");
+        window.location.href ="homepage.html";
+        localStorage.setItem("cartItems",null)
+    }
+    else{
+        document.querySelector(".otp").value=null;
+        alert("Wrong OTP, Re-enter OTP again");
+    }
+   
+}
+
+ 
+</script>
+
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+    <body>
+        <div class="main">
+           
+            <form >
+                <h2>Welcome To Payment Gateway </h2>
+               <input type="text" name="" id="user" placeholder="Card Holder Name"><br><br>
+              <input type="text" name="" id="card" placeholder="Card Number"><br><br>
+              <input type="text" name="" id="expiry" placeholder="MM/YYYY" size="7" minlength="7" maxlength="7"><br><br>
+
+               <input type="password" name="" id="cvv" placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3"><br><br>
+               <input type="submit" id="pay" value="Pay"> 
+            </form>
+                
+                <span></span>
+            </div>
+    </body>
+</html>
+
+
+<script>
+
+
+// document.getElementById("form").addEventListener("submit",paymentConf);
+//     function paymentConf(event){
+//         window.location.href = "paymentStatus.html"
+//     }
+
+
+document.querySelector("form").addEventListener("submit", payment);
+
+
+
+    function payment(event) {
+        event.preventDefault();
+
+        var user = document.querySelector("#user").value;
+        var card = document.querySelector("#card").value;
+        var expiry = document.querySelector("#expiry").value;
+        var cvv = document.querySelector("#cvv").value;
+
+        if (user.length == 0 || card.length == 0 || expiry.length == 0 || cvv.length == 0) {
+            alert("Please Fill All The Filled")
+        }
+        else {
+            window.location.href = "paymentStatus.html";
+        }
+
+    }
+
+   
+</script>

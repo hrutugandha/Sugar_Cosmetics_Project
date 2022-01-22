@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Brush: Buy Brush products Online at Best Price | SUGAR Cosmetics
+    </title>
+    <link rel="stylesheet" href="brush.css" />
+  </head>
+  <body>
+    <!--------------Header--------------->
+    <div id="header-container">
+      <div id="header">
+        <div class="logo">
+          <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="" />
+        </div>
+        <div class="searchbar">
+          <input
+            type="text"
+            class="search_input"
+            placeholder='Try "Liquid Lipstick"'
+          />
+          <a href="" class="search_icon">Search</a>
+        </div>
+
+
+        
+        <div class="login_btn">
+          <img
+            src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+            alt=""
+          />
+
+<div onclick="window.location.href='login.html'">LOGIN</div>
+          <div onclick="window.location.href='signup.html'">SIGN UP</div>
+
+          <!-- <div href="login.html" class="btn_login" >LOGIN/</div>
+         <div href="signup.html"  class="btn_login" >SIGN IN</div> -->
+        </div>
+
+
+
+
+        <div class="cute_btn">
+
+            <img id="wishlist"
+              src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png"
+              alt="wishlist"
+              placeholder="Wishlist"
+            />
+            <img  id="cart"
+              src="https://cdn-icons-png.flaticon.com/512/726/726564.png"
+              alt="cart"
+              placeholder="cart"
+            />
+
+
+            <img id="discount"
+              src="https://cdn-icons-png.flaticon.com/512/879/879859.png"
+              alt="discount"
+              placeholder="Discount"
+            />
+
+        </div>
+      </div>
+      <div id="home_nav">
+        <ul>
+          <li>
+            <a href="makeup.html" class="nav_link" style="padding-left: 20px">
+              MAKEUP</a
+            >
+            <div class="dropdown-makeup">
+              <ul>
+                <li>
+                  <a href="makeup.html">LIPS</a>
+                </li>
+                <li>
+                  <a href="makeup.html">FACE</a>
+                </li>
+                <li>
+                  <a href="makeup.html">EYES</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="brush.html" class="nav_link">BRUSHES</a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li>FACE BRUSHES</li>
+                <li>EYE BRUSHES</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav_link"> SKINCARE </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li>MOISTURIZERS</li>
+                <li>MASKS</li>
+                <li>SETTING MISTS</li>
+                <li>COFFEE CULTURE RANGE</li>
+                <li>SHEET MASK COMBO</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav_link"> TRENDING </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li>SUGAR MERCH STATION</li>
+                <li>MINIS SET</li>
+                <li>MAKEUP KITS</li>
+                <li>BESTSELLERS</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav_link">BLOG </a>
+            <div class="dropdown-makeup">
+              <ul>
+                <li>FEATURED</li>
+                <li>MAKEUP</li>
+                <li>SKINCARE</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav_link">OFFERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--------------Header-end--------------->
+    <div id="displayBar">
+      <div class="homeIcon">
+        <a href="#">
+          <img class="home-img" src="https://i.ibb.co/9cxQD2K/home.png" />
+        </a>
+
+        <a class="home-img1" href="brush.html">/ Brush</a>
+      </div>
+      <div class="sort">
+        <select id="priceSort" onchange="handlerPriceSort()">
+          <option src="" value="">Sorting</option>
+          <option value="high">Price - High to Low</option>
+          <option value="low">Price - Low to High</option>
+          <option value="rel">Relevance</option>
+        </select>
+        <select name="" id="filter" onchange="filter()">
+          <option value="">Select Product</option>
+          <option value="shadow">Eyeshadow</option>
+          <option value="face">Face Brush</option>
+          <option value="found">Foundation</option>
+          <option value="combo">Brush Combo</option>
+        </select>
+      </div>
+    </div>
+    <div id="displayitem"></div>
+    <div id="container-prod"></div>
+    <div id="ft_container">
+      <div id="footer">
+        <div id="icons" class="ft_white">
+          <img
+            src="https://in.sugarcosmetics.com/Footer_sugar_icon.png"
+            alt="suger cosmetics logo"
+          />
+          <div id="ft_logo">
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/facebook.svg"
+              alt="fblogo"
+            />
+            <img
+              src="
+          https://in.sugarcosmetics.com/desc-images/Instagram.svg"
+              alt="instagram logo"
+            />
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg"
+              alt="Pinterest"
+            />
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg"
+              alt="Tumblr"
+            />
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/Youtube.svg"
+              alt="Youtube"
+            />
+          </div>
+        </div>
+        <div id="footer-info">
+          <footer class="ft_row">
+            <footer class="ft_white">SUBSCRIBE TO OUR NEWSLETTER</footer>
+            <footer class="ft_white">GET THE NEW SUGAR APP TODAY.</footer>
+          </footer>
+          <footer class="ft_row ft_white">
+            <div class="ft_row">
+              <input
+                type="email"
+                placeholder="Your email address"
+                id="ft_email"
+              />
+              <button id="ft_signup">SIGN UP</button>
+            </div>
+            <div id="ft_store" class="ft_row">
+              <p>Tap into a better shopping experience.</p>
+              <div class="ft_row">
+                <img
+                  src="https://in.sugarcosmetics.com/playstore.png"
+                  alt="google play store"
+                />
+                <img
+                  src="https://in.sugarcosmetics.com/apple-store.png"
+                  alt="apple play store"
+                />
+              </div>
+            </div>
+          </footer>
+          <footer class="ft_white">INFORMATION</footer>
+          <footer class="ft_row">
+            <div>
+              <a href="mailto:hello@sugarcosmetics.com"> Contact Us </a>
+            </div>
+            <div>
+              <a href="https://in.sugarcosmetics.com/pages/terms-conditions">
+                Terms & Conditions
+              </a>
+            </div>
+            <div>
+              <a href="https://in.sugarcosmetics.com/pages/returns-refunds">
+                Returns
+              </a>
+            </div>
+            <div>
+              <a href="https://in.sugarcosmetics.com/pages/faqs">FAQs</a>
+            </div>
+            <div>
+              <a href="https://in.sugarcosmetics.com/pages/about-us">
+                About Us</a
+              >
+            </div>
+          </footer>
+          <footer class="ft_white">GET IN TOUCH</footer>
+          <footer>
+            <div class="ft_row">
+              <div>
+                <div>Call us at</div>
+                <div>
+                  <a href="tel:022-2847-5555">022-2847-5555</a>
+                </div>
+                <div>
+                  <a href="tel:022-6805-6009">022-6805-6009</a>
+                </div>
+                <div id="ft_time">Monday to Friday : 9 AM to 7 PM</div>
+              </div>
+              <div>
+                <div>Support</div>
+                <div>
+                  <a href="mailto:hello@sugarcosmetics.com"
+                    >hello@sugarcosmetics.com</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div>Careers</div>
+                <div>
+                  <a href="careers@sugarcosmetics.com"
+                    >careers@sugarcosmetics.com</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div>PR & Media</div>
+                <div>
+                  <a href="pr@sugarcosmetics.com">pr@sugarcosmetics.com</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <hr />
+          <footer class="ft_white">
+            <p id="ft_copyright">
+              Copyright © 2022 SUGAR Cosmetics. All rights reserved.
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <script type="text/javascript" src="brush.js"></script> -->
+<script>
+ var cart = document.querySelector("#cart");
+cart.addEventListener('click', function(){
+  window.location.href ="cartPage.html"
+})
+ var wishlist = document.querySelector("#wishlist");
+wishlist.addEventListener('click', function(){
+  window.location.href ="wishlist.html"
+})
+ var discount = document.querySelector("#discount");
+discount.addEventListener('click', function(){
+  window.location.href ="discount.html"
+})
+  
+   var logo = document.querySelector(".logo");
+logo.addEventListener('click', function(){
+  window.location.href ="homepage.html"
+})
+</script>
+<script>
+  var brushData = [
+    {
+      image_url:
+        "https://i.ibb.co/y6GRWj2/Blend-Trend-Face-Brush-006-Highlighter.jpg",
+      name: "Blend Trend Dual Eyeshadow",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.6,
+      reviews: "(15)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/48bJX9K/Blend-Trend-WBG-images-13.jpg",
+      name: "Blend Trend Face Brush",
+      price: 349,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(3)",
+      product: "face",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/ssJSpWF/Blend-Trend-WBG-images-14-1.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/gZqXwpV/Blend-Trend-Foundation-Brush-051-Flat.jpg",
+      name: "Blend Trend Foundation Brush",
+      price: 499,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(2)",
+      product: "found",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/mcw8MXY/Blend-Trend-Face-Brush-001-Blush.jpg",
+      name: "Blend Trend Face Brush - 01",
+      price: 369,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.8,
+      reviews: "(4)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/tQtXRVy/Blend-Trend-WBG-images-5-min.jpg",
+      name: "Blend Trend Dual Eyeshadow",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.9,
+      reviews: "(50)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/f19n9dz/Blend-Trend-WBG-images-3-min.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/dW8ZZx1/Blend-Trend-WBG-images-2-min.jpg",
+      name: "Blend Trend Eyeshadow Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/ScNpF3S/Blend-Trend-WBG-images-12-min.jpg",
+      name: "Blend Trend Dual Face",
+      price: 599,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.8,
+      reviews: "(19)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/1nLCyH5/Blend-Trend-Foundation-Brush-052-Kabuki.jpg",
+      name: "Blend Trend Foundation Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.9,
+      reviews: "(7)",
+      product: "found",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/WGMpyjX/Blend-Trend-Face-Brush-002-Concealer.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/B3nZ113/Blend-Trend-Face-Brush-003-Contour.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(2)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/PhX4jC4/Blend-Trend-Face-Brush-007-Powder.jpg",
+      name: "Blend Trend Face Brush",
+      price: 399,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(5)",
+      product: "shadow",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/2g7GZvb/Beginners-Essentials-Combo1-WBGimages.jpg",
+      name: "Beginners Essential Combo 1",
+      price: 999,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/qkXn8t5/Beginners-Essentials-Combo2-WBGimages.jpg",
+      name: "Beginners Essential Combo 1",
+      price: 799,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 4.4,
+      reviews: "(2)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url:
+        "https://i.ibb.co/0crjDZv/Beginners-Essentials-Combo3-WBGimages.jpg",
+      name: "Face Essential Combo",
+      price: 1499,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+    {
+      image_url: "https://i.ibb.co/n6NtFBj/1-1.jpg",
+      name: "Eyes & FACE Combo",
+      price: 649,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      rating: 5,
+      reviews: "(1)",
+      product: "combo",
+      count: 1,
+    },
+  ];
+
+  localStorage.setItem("brushData", JSON.stringify(brushData));
+
+  var brushData = JSON.parse(localStorage.getItem("brushData"));
+  var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+  var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
+
+  displayData(brushData);
+
+  function filter() {
+    var selected = document.querySelector("#filter").value;
+    var filterList = brushData.filter(function (elem) {
+      return elem.product == selected;
+    });
+    displayData(filterList);
+    document.querySelector(
+      "#displayitem"
+    ).textContent = `Brush - ${filterList.length} items`;
+  }
+
+  function handlerPriceSort() {
+    var selected = document.querySelector("#priceSort").value;
+    if (selected == "high") {
+      brushData.sort(function (a, b) {
+        return b.price - a.price;
+      });
+    }
+    if (selected == "low") {
+      brushData.sort(function (a, b) {
+        return a.price - b.price;
+      });
+    }
+    if (selected == "rel") {
+      brushData.sort(function (a, b) {
+        return b.rating - a.rating;
+      });
+    }
+    displayData(brushData);
+  }
+  document.querySelector(
+    "#displayitem"
+  ).textContent = `Brush - ${brushData.length} items`;
+
+  function displayData(brushData) {
+    document.querySelector("#container-prod").innerHTML = "";
+    brushData.map(function (elem) {
+      var div = document.createElement("div");
+      div.setAttribute("id", "main");
+
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.image_url);
+      img.setAttribute("id", "image");
+
+      var head = document.createElement("p");
+      head.setAttribute("id", "textCenter");
+      head.textContent = elem.name;
+
+      var p = document.createElement("p");
+      p.textContent = `Rs. ${elem.price} `;
+      p.setAttribute("id", "textCenter");
+
+      var div1 = document.createElement("div");
+      div1.setAttribute("id", "flex");
+
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", elem.star_url);
+      img1.setAttribute("id", "star");
+
+      var p1 = document.createElement("p");
+      p1.textContent = elem.rating;
+      head.setAttribute("id", "textCenter");
+
+      var p2 = document.createElement("p");
+      p2.textContent = elem.reviews;
+      head.setAttribute("id", "textCenter");
+
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "flex1");
+
+      var btn = document.createElement("button");
+      btn.setAttribute("id", "btn");
+      btn.innerHTML = "&#129293";
+      btn.addEventListener("click", function () {
+        wishList(elem);
+      });
+
+      var btn1 = document.createElement("button");
+      btn1.textContent = "Add to cart";
+      btn1.addEventListener("click", function () {
+        addToCart(elem);
+      });
+      btn1.setAttribute("id", "btn1");
+      div2.append(btn, btn1);
+      div1.append(img1, p1, p2);
+      div.append(img, head, p, div1, div2);
+      document.querySelector("#container-prod").append(div);
+    });
+  }
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartArr.push(elem);
+    localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    alert("Item added to cart");
+  }
+
+  function wishList(elem) {
+    wishlistArr.push(elem);
+    localStorage.setItem("listItems", JSON.stringify(wishlistArr));
+    alert("Item added to wish list");
+  }
+</script>
