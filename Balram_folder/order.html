@@ -5,116 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>orders</title>
+    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="nav2.css">
-<style>
 
- #text1{
-     margin-left: 130px;
-     color: rgb(94, 86, 86);
- }
- #text2{
-     margin-left: 130px;
-     font-weight: 800px;
-     color: rgb(94, 86, 86);
- }
- #sub{
-     background-color: #fc2779;
-     color: white;
-     margin-top: 20px;
-     padding: 10px 25px 10px 25px;
-     border: 0px;
-     border-radius: 2px;
- }
- #sub:hover{
-     background-color: violet;
- }
- 
-
-
-</style>
-<body>
-  <!--------------Header--------------->
-  <div id="header-container">
-    <div id="header">
-        <div class="logo">
-            <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="">
-        </div>
-        <div class="searchbar">
-          <input type="text" class="search_input" placeholder="Try &quot;Liquid Lipstick&quot;">
-            <a href=""class="search_icon">Search</a>
-          </div>
-        <div class="login_btn">
-            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
-            <u>Login/Sign-up</u>
-        </div>
-        <div class="cute_btn">
-            <img src="https://cdn-icons-png.flaticon.com/128/1077/1077086.png" alt="" placeholder="Wishlist">
-            <img src="https://cdn-icons-png.flaticon.com/512/726/726564.png" alt="" placeholder="cart">
-            <img src="https://cdn-icons-png.flaticon.com/512/879/879859.png" alt="" placeholder="Discount">
-        </div>
-    </div>
-        <div id="home_nav">
-            <ul>
-            <li>
-                <a href="" class="nav_link" style="padding-left: 20px;"> MAKEUP</a>
-                <div class="dropdown-makeup">
-                <ul>
-                    <li>LIPS</li>
-                    <li>FACE</li>
-                    <li>EYES</li>
-                </ul>
-                </div>
-            </li>
-            <li>
-                <a href="" class="nav_link">BRUSHES</a>
-                <div class="dropdown-makeup">
-                <ul>
-                    <li>FACE BRUSHES</li>
-                    <li>EYE BRUSHES</li>
-                </ul>
-                </div>
-            </li>
-            <li>
-                <a href="" class="nav_link"> SKINCARE </a>
-                <div class="dropdown-makeup">
-                <ul>
-                    <li>MOISTURIZERS</li>
-                    <li>MASKS</li>
-                    <li>SETTING MISTS</li>
-                    <li>COFFEE CULTURE RANGE</li>
-                    <li>SHEET MASK COMBO</li>
-                </ul>
-                </div>
-            </li>
-            <li>
-                <a href="" class="nav_link"> TRENDING </a>
-                <div class="dropdown-makeup">
-                <ul>
-                    <li>SUGAR MERCH STATION</li>
-                    <li>MINIS SET</li>
-                    <li>MAKEUP KITS</li>
-                    <li>BESTSELLERS</li>
-                </ul>
-                </div>
-            </li>
-            <li>
-                <a href="" class="nav_link">BLOG </a>
-                <div class="dropdown-makeup">
-                <ul>
-                    <li>FEATURED</li>
-                    <li>MAKEUP</li>
-                    <li>SKINCARE</li>
-                </ul>
-                </div>
-            </li>
-            <li>
-                <a href="" class="nav_link">OFFERS</a>
-            </li>
-            </ul>
-        </div>
-</div>
     <div class="main">
         <div id="A" class="gap"> <a href="order.html"> 
             <h2>Orders</h2>
@@ -142,8 +38,12 @@
         <h1 id="text1">No Order</h1>
         <p id="text2">You don't have any orders in your history yet  <br><input type="submit" id="sub" value="Shop Now"></p>
         
-        <img src="https://in.sugarcosmetics.com/ic_empty_order.png" alt="">
+        <img id="img" src="https://in.sugarcosmetics.com/ic_empty_order.png" alt="">
     </div>
+
+
+
+    <!-- //footer start from here -->
     <div id="ft_container">
         <div id="footer">
           <div id="icons" class="ft_white">
@@ -175,6 +75,7 @@
               />
             </div>
           </div>
+
           <div id="footer-info">
             <footer class="ft_row">
               <footer class="ft_white">SUBSCRIBE TO OUR NEWSLETTER</footer>
@@ -274,4 +175,10 @@
         </div>
       </div>
 </body>
+<script>
+  
+       document.querySelector(".name").innerHTML= localStorage.getItem("login_user_name");
+       document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
+
+</script>
 </html>
