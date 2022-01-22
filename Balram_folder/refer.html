@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wishlist</title>
     <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="footer.css">
@@ -61,6 +63,17 @@
 
 </style>
 <body>
+  <div>
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
+      <span> <a href="wishlist.html">Wishlist</a></span>
+    </p><br>
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
+      <span class="name"></span> 
+    </p>
+    
+  </div>
     <div class="main">
         <div id="A"> <a href="order.html"> 
             <h2>Orders</h2>
@@ -87,15 +100,15 @@
     <div class="main2">
         <div>
             <p>My Referral Code</p>
-            <h3>bpat9205</h3>
+            <h3><span id="name"></span>9205</h3>
         </div>
         <div>
             <p>My UPI ID</p>
-            <h3>Set up UPI ID from app</h3>
+            <h3>98765453210@ybl</h3>
         </div>
         <div>
             <p>My Referrals</p>
-            <h3>INR 0</h3>
+            <h3>INR 251</h3>
         </div>
     </div>
     <a href="">
@@ -243,4 +256,8 @@
     </div>
   </div>
 </body>
+<script>
+       document.querySelector(".name").innerHTML= localStorage.getItem("login_user_name");   
+       document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
+</script>
 </html>

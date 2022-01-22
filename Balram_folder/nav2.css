@@ -79,3 +79,51 @@ a{
        grid-template-rows: 300px ;
    
    }
+
+}
+
+.icon{
+   margin: 30px 20px -40px 55px;
+   font-size: 16px;
+   font-weight: 500;
+   color: gray;
+ }
+  .icon a {
+      border: 0px;
+      background-color: white;
+      color: black;
+      
+    }
+    .icon a:hover{
+     color: gray;
+    }
+    .name{
+      color: rgb(241, 63, 212);
+      font-size: 20px;
+    }
+    #img{
+      height: 30%;
+      width: 40%;
+     margin-left: 400px;
+     margin-top: -100px;
+  }
+  #text1{
+      margin-left: 130px;
+      color: rgb(94, 86, 86);
+  }
+  #text2{
+      margin-left: 130px;
+      font-weight: 800px;
+      color: rgb(94, 86, 86);
+  }
+  #sub{
+      background-color: #fc2779;
+      color: white;
+      margin-top: 20px;
+      padding: 10px 25px 10px 25px;
+      border: 0px;
+      border-radius: 2px;
+  }
+  #sub:hover{
+      background-color: violet;
+  }

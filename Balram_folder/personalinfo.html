@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wishlist</title>
     <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
-</head>
+    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="nav2.css">
 <style>
@@ -32,6 +34,17 @@
 
 </style>
 <body>
+  <div>
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
+      <span> <a href="wishlist.html">Wishlist</a></span>
+    </p><br>
+    <p class="icon">
+      <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
+      <span class="name"></span>
+    </p>
+    
+  </div>
     <div class="main">
         <div id="A"> <a href="order.html"> 
             <h2>Orders</h2>
@@ -58,15 +71,15 @@
     <div class="main2">
         <div>
             <p>Full Name</p>
-            <h3>Balram</h3>
+            <h3 class="name"></h3>
         </div>
         <div>
             <p>Phone Number</p>
-            <h3>989898989898</h3>
+            <h3>9876543210</h3>
         </div>
         <div>
             <p>Email Address</p>
-            <h3>pba@gmail.com</h3>
+            <h3 > <span id="name"> </span> 123@gmail</h3>
         </div>
     </div>
     <div id="add">
@@ -205,4 +218,8 @@
         </div>
       </div>
 </body>
+<script>
+       document.querySelector(".name").innerHTML= localStorage.getItem("login_user_name");
+       document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
+</script>
 </html>
