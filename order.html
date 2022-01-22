@@ -4,90 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
-    <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
+    <title>orders</title>
     <link  href="https://afiles.webengage.com/58add307/0c5c8dc0-9cd7-4d3e-97f0-0d59502d50e7.png" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+</head>
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="nav2.css">
-<style>
-    
-   .main2{
-       display: flex;
-       justify-content: space-around;
-       margin: 30px 300px 0px 50px ;
-       font-weight: 700;
-       color: rgb(56, 53, 53);
-       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-   }
-   .main2 h3{
-       margin-top: -10px;
-      color: black;
-   }
-   #add{
-       margin:30px 0px 0px 50px ;
-   }
-   
- 
 
-
-</style>
-<body>
-  <div>
-    <p class="icon">
-      <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
-      <span> <a href="wishlist.html">Wishlist</a></span>
-    </p><br>
-    <p class="icon">
-      <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
-      <span class="name"></span>
-    </p>
-    
-  </div>
     <div class="main">
-        <div id="A"> <a href="order.html"> 
+        <div id="A" class="gap"> <a href="order.html"> 
             <h2>Orders</h2>
             <p>Order status History Updates..</p>
            </a>
         </div>
-        <div id="B">
+        <div id="B" class="gap">
             <a href="personalinfo.html"><h2>Personal Info</h2>
                 <p>Save addresses add new addresses</p>
             </a>
         </div>
-        <div>
+        <div class="gap">
             <a href="wishlist.html">
                 <h2>Wishlist</h2>
                 <p>Your favourites, order now!</p>
             </a>
         </div>
-        <div>
+        <div class="gap">
          <a href="refer.html">   <h2>Refer & Earn</h2>
             <p>Referral earnings</p>
         </a>
        </div>
     </div>
-    <div class="main2">
-        <div>
-            <p>Full Name</p>
-            <h3 id="name"></h3>
-        </div>
-        <div>
-            <p>Phone Number</p>
-            <h3>9876543210</h3>
-        </div>
-        <div>
-            <p>Email Address</p>
-            <h3 > <span id="name"> </span> 123@gmail</h3>
-        </div>
+    <div class="gap">
+        <h1 id="text1">No Order</h1>
+        <p id="text2">You don't have any orders in your history yet  <br><input type="submit" id="sub" value="Shop Now"></p>
+        
+        <img id="img" src="https://in.sugarcosmetics.com/ic_empty_order.png" alt="">
     </div>
-    <div id="add">
-       <a href="address.html">
-        <img src="https://in.sugarcosmetics.com/desc-images/PersonalInfoAdd.png" alt="">
-       </a>
-        <p>click to add Address</p>
-    </div>
+
+
+
+    <!-- //footer start from here -->
     <div id="ft_container">
         <div id="footer">
           <div id="icons" class="ft_white">
@@ -119,6 +75,7 @@
               />
             </div>
           </div>
+
           <div id="footer-info">
             <footer class="ft_row">
               <footer class="ft_white">SUBSCRIBE TO OUR NEWSLETTER</footer>
@@ -219,7 +176,9 @@
       </div>
 </body>
 <script>
-       document.querySelector(".name ").innerHTML= localStorage.getItem("login_user_name");
+  
+       document.querySelector(".name").innerHTML= localStorage.getItem("login_user_name");
        document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
+
 </script>
 </html>
