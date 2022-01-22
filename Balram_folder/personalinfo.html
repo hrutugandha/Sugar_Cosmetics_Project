@@ -71,7 +71,7 @@
     <div class="main2">
         <div>
             <p>Full Name</p>
-            <h3 class="name"></h3>
+            <h3 id="name"></h3>
         </div>
         <div>
             <p>Phone Number</p>
@@ -219,7 +219,7 @@
       </div>
 </body>
 <script>
-       document.querySelector(".name").innerHTML= localStorage.getItem("login_user_name");
+       document.querySelector(".name ").innerHTML= localStorage.getItem("login_user_name");
        document.querySelector("#name").innerHTML= localStorage.getItem("login_user_name");
 </script>
 </html>
