@@ -3,7 +3,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 20px;
+  margin-top: 200px;
   gap: 50px;
 }
 #main {
@@ -67,7 +67,7 @@ p {
   display: flex;
   width: 95%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 180px;
 }
 #displayitem {
   margin: 5px 0px 0px 38px;

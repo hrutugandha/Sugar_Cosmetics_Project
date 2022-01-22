@@ -1,388 +1,416 @@
-#container{
-    width: 100%;
-    display: block;
-    height: auto;  /* remember to set height to auto; */
-  }::placeholder { 
-    color: #afa9a9;
-    font-size: smaller;
-    font-weight: normal;
-  }
-  #header{
-      display: flex;
-      background-color: #f8f9fa;
-      height: 100px;
-  }
-  #header-container{
-    width: 100%;
-    display: block;
-  }
-  body{
-      margin: 0;
-      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  }
-  .logo{
-      padding: 30px;
-      width: 13%
-  }
-  input{
-      caret-color:transparent;
-      height: 40px;
-  }
-  .searchbar{
+#container {
+  /* margin-top:150px; */
+  width: 100%;
+  display: block;
+  height: auto; /* remember to set height to auto; */
+}
+::placeholder {
+  color: #afa9a9;
+  font-size: smaller;
+}
+#header {
+  display: flex;
+  background-color: #f8f9fa;
+  height: 100px;
+}
+#header-container {
+  top: 0;
+  position: relative;
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 1000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.logo {
+  padding: 30px;
+  width: 13%;
+}
+.logo > img {
+  margin-left: 35px;
+}
+input {
+  caret-color: transparent;
+  height: 40px;
+  border: 1px solid red;
+}
+.searchbar {
   margin-top: 26px;
-  width: 52%;
+  width: 50%;
   height: 40px;
   border: 0;
   background-color: white;
   border-radius: 30px;
   display: flex;
   margin-bottom: 50px;
-  }
-  .search_input{
-  border:0px;
+}
+.search_input {
+  border: 0px;
   border-color: white;
   background: none;
-  caret-color:transparent;
+  caret-color: transparent;
   height: 40px;
   padding: 0 20px;
-  width: 90%;
+  width: 80%;
   text-decoration: none;
   color: black;
   font-size: small;
   border-radius: 30px 0px 0px 30px;
-  }
-  .searchbar > .search_icon{
+}
+.searchbar > .search_icon {
   color: white;
   background-color: black;
   border-radius: 0px 30px 30px 0px;
   justify-content: center;
+}
+.search_icon {
+  height: 40px;
+  width: 120px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  padding: 0 20px;
+}
+.login_btn {
+  cursor: pointer;
+  width: 24%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f8f8fa;
+  margin: 0px;
+}
+.login_btn > img {
+  margin-top: 10px;
+  height: 35px;
+  width: 35px;
+  background-color: #f8f9fa;
+  margin: 0px;
+  color: #f5f5f5;
+}
+.cute_btn {
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+}
+.cute_btn > img {
+  padding: 8px;
+  color: #495057;
+  height: 15px;
+  color: #495057;
+}
+#dropdown_container {
+  width: 100%;
+  margin: 0px;
+  height: 30px;
+  border: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  padding: 10px;
+}
+.dropdown_menu > div {
+  color: #707477e8;
+  font-size: small;
+  font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+#home_nav ul {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: white;
+}
+ul li {
+  margin: 15px 34px;
+}
+.dropdown-makeup ul {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column !important;
+  /* border: 1px solid green; */
+  padding: 0;
+}
+.dropdown-makeup ul li {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start;
+}
+.dropdown-makeup {
+  display: none;
+}
+li:hover > .dropdown-makeup {
+  background-color: white;
+  display: block;
+}
+ul {
+  padding: 0px;
+  display: none;
+}
+.nav_link {
+  color: #707477e8;
+  font-size: small;
+  text-decoration: none;
+  font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+.nav_link:hover {
+  color: transparent;
+  text-shadow: 0 0 1px rgb(15, 13, 13);
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 0 50px 0;
+  /* margin-top:150px; */
+}
+
+.mySlides > img {
+  margin-top: 150px;
+  width: 100%;
+  height: 400px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.1s ease; */
+}
+
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  #login-signup{
-    height: 60px;
-    margin: auto;
-    width: 12%;
-    display: flex;
-    text-align: center;
+  to {
+    opacity: 1;
   }
-  .login-bar{
-    display: flex;
-    height: 60px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    margin-left: -30px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  .login-bar > img{
-    margin: 0 auto;
-    margin-top: 5px;
-    padding-top: 6px;
+  to {
+    opacity: 1;
   }
-  .btn_login{
-    cursor: pointer;
-    width: 50%;
-    background-color: #f8f8fa;
-    color: black;
-    margin: auto;
-    text-decoration: none;
-    font-size: small;
-    padding: 10px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
   }
-  .search_icon {
-      height: 40px;
-      width: 120px;
-      float: right;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration:none;
-      background-color:white;
-      padding: 0 20px;
-      }
-  .login-bar > img {
-      height: 35px;
-      width: 35px;
-      background-color: #f8f9fa;
-      margin:0px;
-      margin-top: 8px;
-  }
-  .cute_btn{
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width:  100%;
-      margin-left: 0px;
-      height: 35px;
-      margin: 0 auto;
-  }
-  .cute_btn > img{
-      padding:  8px;
-      color: #495057;
-      height: 15px;
-      color: #495057;
-  }
-  #dropdown_container {
-      width: 100%;
-      margin: 0px;
-      height: 30px;
-      border: 0px;
-      display: flex;
-      justify-content: space-between;
-  }
-  .dropdown_menu{
-      display: flex;
-      justify-content: space-between;
-      width: 45%;
-      padding: 10px;
-  }
-  .dropdown_menu > div{
-      color: #707477e8;
-      font-size: small;
-      font-family: Arial Black,Arial Bold,Gadget,sans-serif;
-  }
-  #home_nav ul {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    background-color: white;
-  }
-  ul li {
-    margin: 15px 34px;
-  }
-  .dropdown-makeup ul {
-    background-color: white;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-direction: column !important;
-    /* border: 1px solid green; */
-    padding: 0;
-  }
-  .dropdown-makeup ul li {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: flex-start;
-  }
-  .dropdown-makeup {
-    display: none;
-  }
-  li:hover > .dropdown-makeup {
-    background-color: white;
-    display: block;
-  }
-  ul{
-      padding: 0px;
-      display: none;
-  }
-  .nav_link{
-    color: #707477e8;
-    font-size: small;
-    text-decoration: none;
-    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
-  }
-  .nav_link:hover{
-    color: transparent;
-    text-shadow: 0 0 1px rgb(15, 13, 13);
-  }
-  /* Slideshow container */
-  .slideshow-container {
-    width: 100%;
-    height: 400px;
-    margin: auto;
-  }
-  .mySlides > img{
-    width: 100%;
-    height: 400px;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #dbd3d8;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-  #bestseller  , #sugarstream, #super-savers, #giftsets{
-    height: 600px;
-    width: 100%;
-    background-color: #f5f5f5;
-    text-align:center;
-    margin: 0 auto;
-  }
-  .title{
-    font-weight: lighter;
-    padding: 26px;
-    margin: 0px;
-    line-height: 50px;
-    text-align: center;
-  }
-  .card-content{
-    display: flex;
-    width:100%;
-    height: 400px;
-  }
-  h1{
-    font-weight: 100px;
-    padding: 20px;
-    margin: 0px;
-    line-height: 50px;
-    text-align: center;
-  }
-  .card-content > .card {
-    width:  80%;
-    height: 400px;
-    margin: auto;
-    display: flex;
-  }
-  .card-01{
-    height: 400px;
-    width: 25%;
-    justify-content: space-between;
-    background-color: white;
-    margin: 0 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
-  .card-01 > img {
-    height: 66%;
-    width: 60%;
-  }
-  .card-01:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
-  h5{
-    margin-top: 4px
-  }
-  h1{
-    margin: 0px 2px;
-  }
-  button{
-    width: 100%;
-    text-align: center;
-    padding: 0 20px;
-    height: 12%;
-    color: #f5f5f5;
-    background-color: #212529;
-  }
-  button:hover{
-    background-color: #ff0a54;
-    border: 0px;
-  }
-  #hotdeals {
-    height: 320px;
-    width: 100%;
-    background-color: #f5f5f5;
-    text-align:center;
-    margin: auto;
-    display: flex;
-  }
-  .deals{
-    height: 100%;
-    width: 33%;
-    margin: 0 20px;
-  }
-  .deals > img{
-    width: 100%;
-    height: 100%;
-  }
-  .deals > img:hover{
-    cursor: pointer;
-  }
-  .stream-container{
-    height: 70%;
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    text-align:center;
-  }
-  .stream-container > .video-container{
-    height: 100%;
-    width: 250px;
-    margin: 0;
-    padding: 0 5px;
-  }
-  .video-container > video{
-    height: 100%;
-    width: 100%;
-    border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  #quiz , #thisorthat , #beautyblog{
-    height: 400px;
-    width: 100%;
-    background-color: #f5f5f5;
-    text-align:center;
-    margin: 0 auto;
-  }
-  #explore{
-    height: 300px;
-    width: 100%;
-    background-color: #f5f5f5;
-    text-align:center;
-    margin: 0 auto;
-  }
-  .explore-container{
-    height: 260px;
-    width: 100%;
-    display: flex;
-  }
-  .explore-container > .img-responsive{
-    height: 100%;
-    width: 23%;
-    margin: 0px 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  }
-  .this-container{
-    height: 400px;
-    width: 100%;
-    display: flex;
-  }
-  .blog-container{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #f5f5f5;
-  }
-  .blog-container > .img-responsive{
-    height: 400px;
-    width: 496px;
-  }
-  .this-container > .img-responsive{
-    height: 400px;
-    width: 50%;
-    margin: 0px 16px;
-  }
-  .quiz-container{
-    height: 100%;
-    width: 100%;
-  }
-  .quiz-container > img{
-    height: 100%;
-    width: 100%;
-  }
-  #quicktips{
-    margin-top: 100px;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-  }
-  .tips-body{
-    height: 400px;
-    width: 100%;
-    background-color: #f5f5f5;
-  }
-  .tips-body > img{
-    height: 95%;
-    background-image: contain;
-    width: 100%;
-  }
+}
+#bestseller,
+#sugarstream,
+#super-savers,
+#giftsets {
+  height: 600px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 30px auto;
+}
+.title {
+  font-weight: lighter;
+  padding: 26px;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+h1 {
+  font-weight: 100px;
+  padding: 20px;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+}
+.card-content > .card {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+}
+.card-01 {
+  height: 400px;
+  width: 25%;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card-01 > img {
+  height: 66%;
+  width: 60%;
+}
+.card-01:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h5 {
+  margin-top: 4px;
+}
+h1 {
+  margin: 0px 2px;
+}
+.card-01 > button {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  height: 12%;
+  color: #f5f5f5;
+  background-color: #212529;
+}
+button:hover {
+  background-color: #ff0a54;
+  border: 0px;
+}
+#hotdeals {
+  height: 320px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+.deals {
+  height: 100%;
+  width: 33%;
+  margin: 0 20px;
+}
+.deals > img {
+  width: 100%;
+  height: 100%;
+}
+.deals > img:hover {
+  cursor: pointer;
+}
+.stream-container {
+  height: 70%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.stream-container > .video-container {
+  height: 100%;
+  width: 250px;
+  margin: 0;
+  padding: 0 5px;
+}
+.video-container > video {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#quiz,
+#thisorthat,
+#beautyblog {
+  height: 400px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0 auto;
+}
+#explore {
+  height: 300px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0 auto;
+}
+.explore-container {
+  height: 260px;
+  width: 100%;
+  display: flex;
+}
+.explore-container > .img-responsive {
+  height: 100%;
+  width: 386px;
+  margin: 5px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.this-container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+}
+.blog-container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+.blog-container > .img-responsive {
+  height: 400px;
+  width: 30%;
+  padding: 0px 30px;
+}
+.this-container > .img-responsive {
+  height: 400px;
+  width: 50%;
+  margin: 0 50px;
+}
+.quiz-container {
+  height: 100%;
+  width: 100%;
+}
+.quiz-container > img {
+  height: 100%;
+  width: 100%;
+}
+#quicktips {
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+.tips-body {
+  height: 400px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.tips-body > img {
+  height: 95%;
+  background-image: contain;
+  width: 100%;
+}

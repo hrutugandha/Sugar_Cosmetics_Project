@@ -40,9 +40,8 @@ function payment(event) {
     var otpValue=document.querySelector(".otp").value;
     if(otpValue==1234){
         alert("Payment Success, Redirect to Home Page");
-        window.location.href ="cartPage.html";
+        window.location.href ="homepage.html";
         localStorage.setItem("cartItems",null)
-
     }
     else{
         document.querySelector(".otp").value=null;

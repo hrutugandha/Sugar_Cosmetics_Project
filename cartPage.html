@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--------------Header--------------->
-    <div id="header-container">
+   <div id="header-container">
       <div id="header">
         <div class="logo">
           <img src="//in.sugarcosmetics.com/desc-images/SUGARLogo.png" alt="" />
@@ -28,13 +28,25 @@
           />
           <a href="" class="search_icon">Search</a>
         </div>
+
+
+        
         <div class="login_btn">
           <img
             src="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
             alt=""
           />
-          <u>Login/Sign-up</u>
+
+<div onclick="window.location.href='login.html'">LOGIN</div>
+          <div onclick="window.location.href='signup.html'">SIGN UP</div>
+
+          <!-- <div href="login.html" class="btn_login" >LOGIN/</div>
+         <div href="signup.html"  class="btn_login" >SIGN IN</div> -->
         </div>
+
+
+
+
         <div class="cute_btn">
 
             <img id="wishlist"
@@ -374,5 +386,25 @@
 
 </body>
 </html>
+
+<script>
+ var cart = document.querySelector("#cart");
+cart.addEventListener('click', function(){
+  window.location.href ="cartPage.html"
+})
+ var wishlist = document.querySelector("#wishlist");
+wishlist.addEventListener('click', function(){
+  window.location.href ="wishlist.html"
+})
+ var discount = document.querySelector("#discount");
+discount.addEventListener('click', function(){
+  window.location.href ="discount.html"
+})
+  
+   var logo = document.querySelector(".logo");
+logo.addEventListener('click', function(){
+  window.location.href ="homepage.html"
+})
+</script>
 <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/74404664ae.js" crossorigin="anonymous"></script>
