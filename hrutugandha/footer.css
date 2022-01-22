@@ -1,0 +1,119 @@
+
+  #ft_container {
+    padding: 0px;
+    background-color: black;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  #footer {
+    color: rgb(133, 128, 128);
+    margin: 0px;
+    padding-top: 0;
+    width: 100%;
+  }
+  .ft_white {
+    color: white;
+    margin-top: 20px;
+  }
+  .ft_row button {
+    width: 150px;
+  }
+  #footer-info{
+    padding: 0 100px;
+  }
+  .ft_row {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(133, 128, 128);
+    font-size: 18px;
+    padding: 2px;
+  }
+  #icons {
+    text-align: center;
+  }
+  a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  img[alt="suger cosmetics logo"] {
+    width: 120px;
+    height: 120px;
+  }
+  #ft_logo {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 300px;
+  }
+  #ft_logo img {
+    width: 20px;
+    height: 15px;
+    margin: 0 20px;
+  }
+  #ft_store img {
+    width: 100px;
+    height: 30px;
+  }
+  #ft_store p {
+    margin-top: 4px;
+  }
+  p {
+    width: 200px;
+    font-family: Poppins, sans-serif;
+    color: rgb(133, 128, 128);
+  }
+  #ft_time {
+    margin-top: 0;
+    width: 200px;
+    font-size: 13px;
+  }
+  input::placeholder {
+    font-size: 22px;
+    margin: 0;
+  }
+  #ft_signup {
+    background-color: rgb(252, 38, 120);
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 17px;
+    color: white;
+    font-size: 20px;
+  }
+  #ft_email {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 300px;
+  }
+  #ft_copyright {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 16px;
+    width: 100%;
+    font-family: "poppins", "sans-serif";
+  }
+  hr {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 0) and (max-width: 720px) {
+    .ft_row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    #ft_copyright {
+      text-align: left;
+      width: 200px;
+    }
+    #ft_logo {
+      justify-content: flex-start;
+      margin: 0;
+    }
+    #footer > div {
+      padding: 30px;
+    }
+  }
