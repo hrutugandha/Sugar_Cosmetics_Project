@@ -1005,58 +1005,53 @@
     });
   }
 
-  function addToCart(elem, index) {
-    // console.log(elem["product_id"])
-    // console.log(cartArr.length)
-    if (cartArr.length == 0) {
-      cartArr.push(elem);
-    } else {
-      for (var i = 0; i < cartArr.length; i++) {
-        if (elem["product_id"] == cartArr[i].product_id) {
-          console.log(
-            "elem prod id: ",
-            elem["product_id"],
-            "Cart product id: ",
-            cartArr[i].product_id
-          );
-          cartArr[i].count += 1;
-          // break;
-        } else {
-          // cartArr[i].count=0;
-          cartArr.push(elem);
-        }
-      }
-    }
-    // cartArr.push(elem);
-    localStorage.setItem("cartItems", JSON.stringify(cartArr));
-    alert("Item added to cart");
-  }
-
-  // function addToCart(elem){
-  //     console.log(elem)
-  //     cartArr.push(elem)
-  //     localStorage.setItem("cartItems", JSON.stringify(cartArr));
-  //     alert("Item added to cart")
-
+  // function addToCart(elem, index) {
+  //   // console.log(elem["product_id"])
+  //   // console.log(cartArr.length)
+  //   if (cartArr.length == 0) {
+  //     cartArr.push(elem);
+  //   } else {
+  //     for (var i = 0; i < cartArr.length; i++) {
+  //       if (elem["product_id"] == cartArr[i].product_id) {
+  //         console.log(
+  //           "elem prod id: ",
+  //           elem["product_id"],
+  //           "Cart product id: ",
+  //           cartArr[i].product_id
+  //         );
+  //         cartArr[i].count += 1;
+  //         // break;
+  //       } else {
+  //         // cartArr[i].count=0;
+  //         cartArr.push(elem);
+  //       }
+  //     }
+  //   }
+  //   // cartArr.push(elem);
+  //   localStorage.setItem("cartItems", JSON.stringify(cartArr));
+  //   alert("Item added to cart");
   // }
+
+  function addToCart(elem){
+      console.log(elem)
+      cartArr.push(elem)
+      localStorage.setItem("cartItems", JSON.stringify(cartArr));
+      alert("Item added to cart")
+
+  }
 
   function wishList(elem) {
     wishlistArr.push(elem);
     localStorage.setItem("listItems", JSON.stringify(wishlistArr));
     alert("Item added to wish list");
   }
-
-  //data--------------------------------------------------------
-
-
-  
-  var counter = 1;
-  for (var i = 0; i < makeupData.length; i++) {
-    makeupData[i]["product_id"] = counter;
+  // var counter = 1;
+  // for (var i = 0; i < makeupData.length; i++) {
+  //   makeupData[i]["product_id"] = counter;
     
-    console.log(makeupData[i]["product_id"]);
-    counter++;
-  }
+  //   console.log(makeupData[i]["product_id"]);
+  //   counter++;
+  // }
   localStorage.setItem("makeupData", JSON.stringify(makeupData));
 
   

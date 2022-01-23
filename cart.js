@@ -206,7 +206,7 @@
             });
 
             function emptyBtnClick(event){
-                window.location.href = "payment.html"
+                window.location.href = "homepage.html"
             }
 
     //         document.getElementById("#emptyBtn>button").addEventListener("submit",btnClick);

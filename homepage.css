@@ -234,7 +234,7 @@ ul {
 #sugarstream,
 #super-savers,
 #giftsets {
-  height: 600px;
+  height: 500px;
   width: 100%;
   background-color: #f5f5f5;
   text-align: center;
@@ -339,38 +339,33 @@ button:hover {
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+#thisorthat {
+  display: flex;
+  width: 100%;
+  margin-top:70px;
+}
+#thisorthat img {
+  width: 45%;
+  height: 400px;;
+  margin:0 auto;
+}
+#thisorthat img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 #quiz,
-#thisorthat,
-#beautyblog {
-  height: 400px;
+
+#explore{
   width: 100%;
-  background-color: #f5f5f5;
-  text-align: center;
-  margin: 0 auto;
+  display:flex;
+
 }
-#explore {
-  height: 300px;
-  width: 100%;
-  background-color: #f5f5f5;
-  text-align: center;
-  margin: 0 auto;
+#explore img {
+  width: 23%;
+  margin:5px auto;
 }
-.explore-container {
-  height: 260px;
-  width: 100%;
-  display: flex;
-}
-.explore-container > .img-responsive {
-  height: 100%;
-  width: 386px;
-  margin: 5px auto;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.this-container {
-  height: 400px;
-  width: 100%;
-  display: flex;
-}
+
+
 .blog-container {
   height: 400px;
   width: 100%;
@@ -383,11 +378,7 @@ button:hover {
   width: 30%;
   padding: 0px 30px;
 }
-.this-container > .img-responsive {
-  height: 400px;
-  width: 50%;
-  margin: 0 50px;
-}
+
 .quiz-container {
   height: 100%;
   width: 100%;
