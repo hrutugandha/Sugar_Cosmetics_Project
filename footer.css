@@ -72,11 +72,11 @@ img[alt="suger cosmetics logo"] {
   width: 200px;
   font-size: 13px;
 }
-.ft_row input {
+input {
   color: white;
   font-size: 24px;
 }
-.ft_row input::placeholder {
+input::placeholder {
   font-size: 22px;
   margin: 0;
 }
